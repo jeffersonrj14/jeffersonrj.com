@@ -156,15 +156,15 @@ const availablestatus = date => {
           Socials
         </h2> */}
         	<ul className='font-medium tracking-tight text-slate-200'>
-            	<MyLinks href='https://github.com/jeffersonrj14' text='GitHub'/>  
-            	<MyLinks href='https://instagram.com/jeffersonrj14' text='Instagram' />
-            	<MyLinks href='https://twitter.com/jeffersonrj14' text='Twitter' />
+            	<MyLinks href='https://github.com/jeffersonrj14' text='GitHub' rel='me' />  
+				<MyLinks href='https://discordapp.com/users/606481557615542273' text='Discord' rel='me' />
         	</ul>
       	</div>
 		<div>
         	<ul className='font-medium tracking-tight text-slate-200'>
-				<MyLinks href='https://discordapp.com/users/606481557615542273' text='Discord' />
-            	<MyLinks href='https://keybase.io/jeffersonfed' text='Keybase' /> 
+            	<MyLinks href='https://instagram.com/jeffersonrj14' text='Instagram' rel='me' />
+            	<MyLinks href='https://twitter.com/jeffersonrj14' text='Twitter' rel='me' />
+            	{/* <MyLinks href='https://keybase.io/jeffersonfed' text='Keybase' />  */}
         	</ul>
 		</div>
 	   
