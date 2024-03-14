@@ -219,10 +219,10 @@ import {
 		>
         <div className="pt-5 mb-5 max-w-2xl">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-                Hi, I'm RJ Jefferson
+                Hi, I&apos;m RJ Jefferson
             </h1>
             <p className="mt-6 text-lg text-gray-600 dark:text-gray-400">
-              As a Front-End Developer based in Indonesia, I'm constantly learning and honing my skills on Frontend Mentor, including problem-solving and CSS. I'm looking for new opportunities to expand my skills as I learn new languages.
+              As a Front-End Developer based in Indonesia, I&apos;m constantly learning and honing my skills on Frontend Mentor, including problem-solving and CSS. I'm looking for new opportunities to expand my skills as I learn new languages.
             </p>
             <div className="mt-6 flex gap-6">
                 <SocialLink
