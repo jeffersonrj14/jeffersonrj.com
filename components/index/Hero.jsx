@@ -245,11 +245,11 @@ import {
                     aria-label="Check out my Twitter"
                     icon={SiTwitter}
                 />
-                <SocialLink
+                {/* <SocialLink
                     href="https://linkedin.com/in/jeffersonrj14"
                     aria-label="Connect with me on LinkedIn"
                     icon={SiLinkedin}
-                />
+                /> */}
                 <SocialLink
                     href="/Resume.pdf"
                     aria-label="Check out my Resume"

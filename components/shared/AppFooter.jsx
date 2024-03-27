@@ -106,7 +106,7 @@ const availablestatus = date => {
         	</h2>
 
         	<ul className='font-medium tracking-tight text-slate-200'>
-			  <MyLinks href='https://links.jeffersonfed.xyz' text='Social Links ' />
+			  <MyLinks href='#' text='Blog(Coming Soon) ' />
           	</ul>
       	</div>
 
@@ -132,7 +132,7 @@ const availablestatus = date => {
 
         	<ul className='font-medium tracking-tight text-slate-200'>
 			  <MyLinks href='mailto:jefferson@jeffersonrj.com' text='Email' />
-			  <MyLinks href='https://www.linkedin.com/in/jeffersonrj14' text='Linkedin' />
+			  {/* <MyLinks href='https://www.linkedin.com/in/jeffersonrj14' text='Linkedin' /> */}
           	</ul>
       	</div>
 
