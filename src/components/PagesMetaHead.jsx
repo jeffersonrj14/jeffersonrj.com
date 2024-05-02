@@ -35,7 +35,7 @@ function PagesMetaHead({ title, keywords, description, icon }) {
 PagesMetaHead.defaultProps = {
   title: 'Ritch Johan Jefferson - Front-end developer',
   keywords: 'next.js',
-  description: 'Ritch Johan Jefferson - Self-taught front-end developer.',
+  description: 'Ritch Johan Jefferson - Portfolio Website',
   icon: '/author2.png'
 }
 
