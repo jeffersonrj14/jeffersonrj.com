@@ -9,15 +9,19 @@ function PagesMetaHead({ title, keywords, description }) {
         description={description}
         keywords={keywords}
         openGraph={{
+          image: '/author2.png',
           type: 'website',
           locale: 'en_US',
           url: 'https://jeffersonrj.com',
           siteName: 'Portfolio'
         }}
         twitter={{
+          image: '/author2.png',
+          cardType: 'summary_large_image',
+          title,
+          description,
           handle: '@jeffersonrj14',
-          site: '@jeffersonrj14',
-          cardType: 'summary_large_image'
+          site: '@jeffersonrj14'
         }}
       />
 
