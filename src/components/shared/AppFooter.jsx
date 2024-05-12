@@ -83,7 +83,7 @@ const Available = () => {
 
 const AboutMe = () => {
   return (
-    <section className='my-4 grid grid-cols-2 sm:grid-cols-2  '>
+    <div className='my-4 grid grid-cols-2 sm:grid-cols-2  '>
       {/* <div className="hidden sm:block md:block">
       		<h2 className='font-header uppercase tracking-tight text-2xl font-extrabold  text-jefferson-light'>
           		Title
@@ -96,7 +96,7 @@ const AboutMe = () => {
 
       <div>
         <h2 className='font-header uppercase tracking-tight text-2xl font-extrabold  text-jefferson-light'>
-          Who am I?
+          I am
         </h2>
         <ul className='font-medium tracking-tight text-slate-200'>
           <span className='my-2 font-medium tracking-tight text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all text-xl hover:underline hover:text-jefferson-main '>
@@ -119,13 +119,13 @@ const AboutMe = () => {
           {/* <MyLinks href='https://www.linkedin.com/in/jeffersonrj14' text='Linkedin' rel='me'/> */}
         </ul>
       </div>
-    </section>
+    </div>
   )
 }
 
 const AboutMe2 = () => {
   return (
-    <section className='my-4 grid grid-cols-3 sm:grid-cols-3'>
+    <div className='my-4 grid grid-cols-3 sm:grid-cols-3'>
       <div>
         <ul className='font-medium tracking-tight text-slate-200'>
           <MyLinks href='/' text='Home' />
@@ -149,7 +149,7 @@ const AboutMe2 = () => {
           {/* <MyLinks href='https://keybase.io/jeffersonfed' text='Keybase' rel='me'/>  */}
         </ul>
       </div>
-    </section>
+    </div>
   )
 }
 const AboutFooter = () => {
@@ -178,7 +178,7 @@ const AboutFooter = () => {
 
 function AppFooter() {
   return (
-    <div className='container mx-auto'>
+    <section className='container mx-auto'>
       <div className='pt-20 sm:pt-30 pb-8 mt-20  border-secondary-dark'>
         <hr className=' mx-auto border-t-2 border-primary-light rounded-2xl' />
         <div className='mt-2 flex w-full flex-col text-center '>
@@ -210,7 +210,7 @@ function AppFooter() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

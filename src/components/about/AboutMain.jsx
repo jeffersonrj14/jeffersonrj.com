@@ -29,21 +29,21 @@ const InlineLink = ({ href, children }) => (
 
 function AboutMain() {
   return (
-    <div class='pt-20 container mx-auto relative text-jefferson-light '>
+    <div className='pt-20 container mx-auto relative text-jefferson-light '>
       <AboutMe />
       <AboutBackground />
 
-      <section class='mt-10 sm:mt-20 '>
+      <section className='mt-10 sm:mt-20 '>
         <AboutEducation />
       </section>
 
-      <hr class='border-primary-light rounded-2xl mx-44' />
+      <hr className='border-primary-light rounded-2xl mx-44' />
 
-      <section class=' pt-10'>
+      <section className=' pt-10'>
         <AboutExperience />
       </section>
 
-      <section class=' pt-10'>
+      <section className=' pt-10'>
         <AboutContact />
       </section>
     </div>

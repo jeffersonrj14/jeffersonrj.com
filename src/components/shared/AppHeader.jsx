@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { FiSun, FiMoon, FiX, FiMenu } from 'react-icons/fi'
+import { FiX, FiMenu } from 'react-icons/fi'
 
 import { FiMail } from 'react-icons/fi'
 
