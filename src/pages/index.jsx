@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import PagesMetaHead from '../components/PagesMetaHead'
-import ProjectsGrid from '../components/projects/ProjectsGrid'
-import Button from '../components/reusable/Button'
-import Hero from '../components/index/Hero'
-import Skills from '../components/index/Skills'
+import PagesMetaHead from '@/components/PagesMetaHead'
+import ProjectsGrid from '@/components/projects/ProjectsGrid'
+import Button from '@/components/reusable/Button'
+import Hero from '@/components/index/Hero'
+import Skills from '@/components/index/Skills'
 
 export default function Home() {
   return (

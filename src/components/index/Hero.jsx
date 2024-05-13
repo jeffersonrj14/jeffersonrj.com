@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { SiGithub, SiTwitter, SiLinkedin, SiInstagram } from 'react-icons/si'
+import NowPlaying from '@/components/Spotify/NowPlaying'
 
 import { IoMail, IoLogoDiscord, IoDocumentText } from 'react-icons/io5'
 
@@ -157,6 +158,12 @@ function Hero() {
           <div className='pt-5 text-lg '>
             Indonesia • <CurrentTime />
             <Available />
+          </div>
+
+          <div className='pt-5 relative'>
+            <div className='absolute left-0'>
+              <NowPlaying />
+            </div>
           </div>
         </div>
       </motion.div>

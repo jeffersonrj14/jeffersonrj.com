@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
-import PagesMetaHead from '../components/PagesMetaHead'
+import PagesMetaHead from '@/components/PagesMetaHead'
 
 // import FutureAI from '../public/certificate/CERT_99BHN1P0.pdf';
 

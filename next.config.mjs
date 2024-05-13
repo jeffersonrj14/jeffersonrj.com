@@ -22,6 +22,14 @@ const nextConfig = {
         permanent: true
       }
     ]
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.scdn.co'
+      }
+    ]
   }
 }
 

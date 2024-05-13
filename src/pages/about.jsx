@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 
-import AboutMain from '../components/about/AboutMain'
-import AboutMeBio from '../components/about/AboutMeBio'
-import PagesMetaHead from '../components/PagesMetaHead'
+import AboutMain from '@/components/about/AboutMain'
+import AboutMeBio from '@/components/about/AboutMeBio'
+import PagesMetaHead from '@/components/PagesMetaHead'
 
 function about() {
   return (
