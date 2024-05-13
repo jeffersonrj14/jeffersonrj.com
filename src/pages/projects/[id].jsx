@@ -103,10 +103,20 @@ function ProjectSingle(props) {
               </p>
 
               <ul className='list-disc text-xl'>
-                {props.project.ProjectInfo.TechnologiesDetails.map((details) => {
+                {props.project.ProjectInfo.TechnologiesDetails.map((Details) => {
                   return (
-                    <li className='font-general-regular text-ternary-light' key={details.id}>
-                      ・{details.details}
+                    <li className='font-general-regular text-ternary-light ' key={Details.id}>
+                      <span>・{Details.title}</span>
+                      <a
+                        href={Details.url}
+                        target='a_blank'
+                        className={
+                          'text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-main cursor-pointer duration-300'
+                        }
+                        aria-label='Inspiration Website '
+                      >
+                        {Details.details}
+                      </a>
                     </li>
                   )
                 })}
@@ -122,29 +132,31 @@ function ProjectSingle(props) {
 						</p> */}
             </div>
 
-            {/* Single project social sharing */}
-            <div>
-              <p className='font-general-regular text-2xl font-semibold text-ternary-light mb-2'>
-                {props.project.ProjectInfo.SocialSharingHeading}
+            <div className='mb-7'>
+              <p className='font-general-regular text-3xl font-semibold text-ternary-light mb-2'>
+                {props.project.ProjectInfo.InspirationHeading}
               </p>
-              {/* <div className="flex items-center gap-3 mt-5">
-							{props.project.ProjectInfo.SocialSharing.map(
-								(social, index) => {
-									<Link
-										key={index}
-										href={social.url}
-										target="__blank"
-										passHref={true}
-										aria-label="Share Project"
-										className="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:hover:text-primary-light p-2 rounded-lg shadow-sm duration-500"
-									>
-										<span className="text-lg lg:text-2xl">
-											{social.icon}
-										</span>
-									</Link>;
-								}
-							)}
-						</div> */}
+              <div className='font-general-regular text-ternary-light'>
+                <ul className='list-disc text-xl'>
+                  {props.project.ProjectInfo.InspirationDetails.map((Details) => {
+                    return (
+                      <li className='font-general-regular text-ternary-light ' key={Details.id}>
+                        <span>・{Details.title}</span>
+                        <a
+                          href={Details.url}
+                          target='a_blank'
+                          className={
+                            'text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-main cursor-pointer duration-300'
+                          }
+                          aria-label='Inspiration Website '
+                        >
+                          {Details.details}
+                        </a>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
             </div>
           </div>
 
