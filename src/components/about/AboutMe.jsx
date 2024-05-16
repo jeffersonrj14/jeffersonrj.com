@@ -6,7 +6,7 @@ const InlineLink = ({ href, children }) => (
     href={href}
     target='a_blank'
     passHref
-    className='relative inline-block text-jefferson-main before:absolute before:-inset-1 before:block before:-skew-y-3 hover:text-jefferson-dark  before:hover:bg-jefferson-light'
+    className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline text-jefferson-main hover:text-jefferson-light'
   >
     <span className='relative skew-y-3'>{children}</span>
   </Link>

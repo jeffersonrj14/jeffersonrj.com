@@ -45,7 +45,7 @@ function AboutEducation() {
         <div className='flex flex-col col-span-2 mb-4 md:mb-0'>
           <h5 className='text-xl md:text-2xl  font-bold'>Diploma Web System</h5>
           <h6 className='text-lg font-bold'>
-            <MyLinks href='https://ncp.ac.jp' text='Institute computer Japan' />
+            <MyLinks href='https://ncp.ac.jp' text='Nihon Computer Professional Training College' />
           </h6>
           <p>Apr 2021 - Mar 2023 (Osaka, Japan)</p>
         </div>
@@ -57,9 +57,9 @@ function AboutEducation() {
                 Relevant Courses
               </li>
               <ul>
-                <li className='my-2'>1. Web System - Javascript, PHP, Python, Java, C#</li>
-                <li className='my-2'>2. Web Design - HTML, CSS, Jquery, API</li>
-                <li className='my-2'>3. Database -MySQL</li>
+                <li className='my-2'>1. Web System - Javascript, PHP, Python, Java, C, API</li>
+                <li className='my-2'>2. Web Design - HTML, CSS, Jquery</li>
+                <li className='my-2'>3. Database - MariaDB (MySQL)</li>
               </ul>
             </ul>
           </div>

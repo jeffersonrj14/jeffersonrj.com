@@ -1,3 +1,16 @@
+import Link from 'next/link'
+
+const InlineLink = ({ href, children }) => (
+  <Link
+    href={href}
+    passHref
+    target='a_blank'
+    className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline text-jefferson-main hover:text-jefferson-light'
+  >
+    <span className='relative skew-y-3'>{children}</span>
+  </Link>
+)
+
 function AboutBackground() {
   return (
     <div className='flex flex-col pt-10'>
@@ -7,8 +20,9 @@ function AboutBackground() {
 
       <p className='mt-4 text-xl font-medium leading-8 tracking-tight'>
         My Journey in Programming began when I was 20 years old, when I studied web system in my
-        diploma program at Institute Computer Japan in Osaka. In addition, I learned HTML and CSS
-        from Youtube. After Learning these skills, I set out to create a fun project for myself
+        diploma program at Nihon Computer Professional Training College in Osaka. In addition, I
+        learned HTML and CSS from Youtube. After Learning these skills, I set out to create a fun
+        project for myself
       </p>
       <p className='mt-4 text-xl font-medium leading-8 tracking-tight'>
         At that time, I was not very serious about it, but then I realized I needed to take it
@@ -16,7 +30,10 @@ function AboutBackground() {
       </p>
       <p className='mt-4 text-xl font-medium leading-8 tracking-tight'>
         So, I have taken a more serious path to my programming journey by enrolling in Zero To
-        Mastery Academy (The Complete Web Developer in 2024: Zero to Mastery course)
+        Mastery Academy{' '}
+        <InlineLink href='https://zerotomastery.io/courses/coding-bootcamp/'>
+          (The Complete Web Developer in 2024: Zero to Mastery course)
+        </InlineLink>
       </p>
       <p className='mt-4 text-xl font-medium leading-8 tracking-tight'>
         In my spare time, I moderate a Japanese community called Artificial Intelligence Japan,

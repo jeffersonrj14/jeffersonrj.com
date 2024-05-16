@@ -110,11 +110,16 @@ function Hero() {
           <h1 className='text-4xl font-bold tracking-tight sm:text-5xl'>
             Hi, I&apos;m RJ Jefferson
           </h1>
+          <h3 className='ml-0.5 text-xl font-medium tracking-tight sm:text-2xl'>
+            Self-Taught Front End Developer
+          </h3>
 
           <p className='mt-6 text-lg text-gray-400'>
-            As an Independent Learner, I&apos;m learning every day to improve my skills, practicing
-            problem-solving, and honing my CSS skills on Frontend Mentor. I&apos;m looking for new
-            opportunities to expand my skills as I learn new languages.
+            As an Independent Student, I&apos;m learning every day to improve my skills, practicing
+            problem-solving, and honing my CSS skills on Frontend Mentor. I enjoy creating projects
+            and leveling them up. I&apos;m looking for new opportunities to expand my skills as I
+            learn new languages, with the goal of contributing to open-source projects in the
+            future.
           </p>
           <div className='mt-6 flex gap-6'>
             <SocialLink
