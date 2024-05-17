@@ -114,7 +114,7 @@ function Hero() {
             Self-Taught Front End Developer
           </h3>
 
-          <p className='mt-6 text-lg text-gray-400'>
+          <p className='mt-6 text-lg text-gray-300'>
             As an Independent Student, I&apos;m learning every day to improve my skills, practicing
             problem-solving, and honing my CSS skills on Frontend Mentor. I enjoy creating projects
             and leveling them up. I&apos;m looking for new opportunities to expand my skills as I
