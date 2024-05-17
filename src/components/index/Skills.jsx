@@ -10,7 +10,6 @@ import {
   SiTailwindcss,
   SiGit,
   SiGithub,
-  SiGnubash,
   SiLatex,
   SiVisualstudiocode,
   SiIntellijidea

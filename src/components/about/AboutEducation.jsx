@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 const MyLinks = ({ href, text, rel }) => {
   return (
     <a
@@ -66,10 +64,10 @@ function AboutEducation() {
         </div>
       </div>
 
-      <div class='grid grid-cols-1 md:grid-cols-6 my-10'>
-        <div class='flex flex-col col-span-2 mb-4 md:mb-0'>
-          <h5 class='text-xl md:text-2xl  font-bold'>Japanese Language School</h5>
-          <h6 class='text-lg font-bold'>
+      <div className='grid grid-cols-1 md:grid-cols-6 my-10'>
+        <div className='flex flex-col col-span-2 mb-4 md:mb-0'>
+          <h5 className='text-xl md:text-2xl  font-bold'>Japanese Language School</h5>
+          <h6 className='text-lg font-bold'>
             <MyLinks
               href='https://www.kla.ac/jp/school/kyotochuo/'
               text='Kyoshin Language Academy School'
@@ -77,7 +75,7 @@ function AboutEducation() {
           </h6>
           <p>Jul 2019 - Mar 2021 (Kyoto, Japan)</p>
         </div>
-        <div class='flex flex-col col-span-4 text-xl'>
+        <div className='flex flex-col col-span-4 text-xl'>
           <div>
             <p className='my-2 font-semibold decoration-wavy decoration-2 underline-offset-4 hover:underline text-jefferson-main hover:text-jefferson-light'>
               Activities and societies

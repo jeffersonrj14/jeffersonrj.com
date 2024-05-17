@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { FiX, FiMenu } from 'react-icons/fi'
-
-import { FiMail } from 'react-icons/fi'
+import { FiX, FiMenu, FiMail } from 'react-icons/fi'
 
 function AppHeader() {
   const [showMenu, setShowMenu] = useState(false)

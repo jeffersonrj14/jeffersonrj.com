@@ -3,7 +3,13 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    formats: ['image/avif', 'image/webp']
+    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.scdn.co'
+      }
+    ]
   },
   i18n: {
     locales: ['en-US'],
@@ -20,14 +26,6 @@ const nextConfig = {
         source: '/resume',
         destination: '/resume.pdf',
         permanent: true
-      }
-    ]
-  },
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'i.scdn.co'
       }
     ]
   }

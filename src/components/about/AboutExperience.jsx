@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 const MyLinks = ({ href, text, rel }) => {
   return (
     <a
@@ -50,7 +48,7 @@ function AboutExperience() {
           </h6>
           <p>Oct 2019 - Oct 2022 (Kyoto, Japan)</p>
         </div>
-        <div class='flex flex-col col-span-4 text-xl'>
+        <div className='flex flex-col col-span-4 text-xl'>
           <div>
             <li className='my-2'>
               Worked in food services company as a part time job during studies
