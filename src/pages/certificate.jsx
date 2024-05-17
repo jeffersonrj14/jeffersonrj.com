@@ -45,6 +45,44 @@ function certificate() {
                 <div class='py-5'>
                   <details class='group text-xl '>
                     <summary class='flex justify-between items-center font-semibold cursor-pointer list-none shadow-lg px-2 py-2 rounded-lg bg-jefferson-light  hover:bg-jefferson-main  hover:text-jefferson-light text-jefferson-dark'>
+                      <span>Zero To Mastery Academy</span>
+                      <span class='transition group-open:rotate-180'>
+                        <svg
+                          fill='#DFE6E9'
+                          height='24'
+                          shape-rendering='geometricPrecision'
+                          stroke='currentColor'
+                          stroke-linecap='round'
+                          stroke-linejoin='round'
+                          stroke-width='1.5'
+                          viewBox='0 0 24 24'
+                          width='24'
+                        >
+                          <path d='M6 9l6 6 6-6'></path>
+                        </svg>
+                      </span>
+                    </summary>
+
+                    <div class='bg-jefferson-light shadow-lg rounded-lg px-2 py-2 items-center mt-3 group-open:animate-fadeIn  '>
+                      <ul class=' text-jefferson-dark'>
+                        <li>
+                          <span class='font-bold '>
+                            Future of A.I. & How To Use ChatGPT (Jan 2023)
+                          </span>
+                          <br />・
+                          <InlineLink href='/certificate/zero-to-mastery/future-of-ai-and-how-to-use-chatgpt.pdf'>
+                            View certificate in PDF
+                          </InlineLink>
+                          <br />
+                        </li>
+                      </ul>
+                    </div>
+                  </details>
+
+                  <br />
+
+                  <details class='group text-xl '>
+                    <summary class='flex justify-between items-center font-semibold cursor-pointer list-none shadow-lg px-2 py-2 rounded-lg bg-jefferson-light  hover:bg-jefferson-main  hover:text-jefferson-light text-jefferson-dark'>
                       <span>EF Standard English Test (EF SET)</span>
                       <span class='transition group-open:rotate-180'>
                         <svg
@@ -66,12 +104,12 @@ function certificate() {
                     <div class='bg-jefferson-light shadow-lg rounded-lg px-2 py-2 items-center mt-3 group-open:animate-fadeIn  '>
                       <ul class=' text-jefferson-dark'>
                         <li>
-                          <span class='font-medium '>
-                            EFSET English Certificate 61/100 (C1 Advanced)
+                          <span class='font-bold '>
+                            EFSET English Certificate 61/100 (C1 Advanced) (Apr 23, 2024)
                           </span>
-                          <br />
+                          <br />・
                           <InlineLink href='https://cert.efset.org/eq4mfx'>
-                            ・View Certificate
+                            View certificate Online
                           </InlineLink>
                         </li>
                       </ul>
@@ -104,48 +142,30 @@ function certificate() {
                       <ul class=' text-jefferson-dark'>
                         <li>
                           <span class='font-bold '>成績表・Grade Report</span>
-                          <br />・<InlineLink href='/certificate/jtest/01.pdf'>View PDF</InlineLink>
-                          <br />
-                          <Image
-                            src='/certificate/jtest/01.jpg'
-                            alt='JTEST 成績表'
-                            className='mx-auto'
-                            width={450}
-                            height={450}
-                          />
-                          <br />・<InlineLink href='/certificate/jtest/02.pdf'>View PDF</InlineLink>
-                          <br />
-                          <Image
-                            src='/certificate/jtest/02.jpg'
-                            alt='JTEST 成績表'
-                            className='mx-auto'
-                            width={450}
-                            height={450}
-                          />
+                          <br />・
+                          <InlineLink href='/certificate/jtest/01.pdf'>
+                            View certificate in PDF
+                          </InlineLink>
+                          <br />・
+                          <InlineLink href='/certificate/jtest/02.pdf'>
+                            View certificate in PDF
+                          </InlineLink>
                         </li>
+                        <br />
                         <li>
                           <span class='font-bold '>参考資料・Reference Material</span>
-                          <br />・<InlineLink href='/certificate/jtest/03.pdf'>View PDF</InlineLink>
-                          <br />
-                          <Image
-                            src='/certificate/jtest/03.jpg'
-                            alt='JTest 参考資料'
-                            className='mx-auto'
-                            width={450}
-                            height={450}
-                          />
+                          <br />・
+                          <InlineLink href='/certificate/jtest/03.pdf'>
+                            View certificate in PDF
+                          </InlineLink>
                         </li>
+                        <br />
                         <li>
                           <span class='font-bold '>認定証・Certificate</span>
-                          <br />・<InlineLink href='/certificate/jtest/04.pdf'>View PDF</InlineLink>
-                          <br />
-                          <Image
-                            src='/certificate/jtest/04.jpg'
-                            alt='JTEST 認定証'
-                            className='mx-auto'
-                            width={450}
-                            height={450}
-                          />
+                          <br />・
+                          <InlineLink href='/certificate/jtest/04.pdf'>
+                            View certificate in PDF
+                          </InlineLink>
                         </li>
                       </ul>
                     </div>

@@ -13,12 +13,12 @@ const nextConfig = {
     return [
       {
         source: '/cv',
-        destination: '/Resume.pdf',
+        destination: '/resume.pdf',
         permanent: true
       },
       {
         source: '/resume',
-        destination: '/Resume.pdf',
+        destination: '/resume.pdf',
         permanent: true
       }
     ]

@@ -32,7 +32,7 @@ function AboutMe() {
         You can find me on <InlineLink href='https://github/jeffersonrj14'>GitHub</InlineLink>,{' '}
         <InlineLink href='https://discordapp.com/users/606481557615542273'>Discord</InlineLink> and{' '}
         <InlineLink href='https://twitter.com/jeffersonrj14'>Twitter</InlineLink>. Here is my{' '}
-        <InlineLink href='#'>Resume</InlineLink> if you need it!
+        <InlineLink href='/resume.pdf'>Resume</InlineLink> if you need it!
       </p>
     </div>
   )

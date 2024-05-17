@@ -18,7 +18,7 @@ const InlineLink = ({ href, children }) => (
 function certificate() {
   return (
     <div>
-      <PagesMetaHead title='Academic Record' />
+      <PagesMetaHead title='Document' />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, delay: 1 }}
@@ -72,27 +72,20 @@ function certificate() {
                           <span class='font-bold '>
                             卒業証書・Graduation certificate (March 15, 2023)
                           </span>
-                          <br />・<InlineLink href='/document/college/02.pdf'>View PDF</InlineLink>
-                          <br />
-                          <Image
-                            src='/document/college/02.jpg'
-                            alt='日本コンピュータ専門学校 卒業証書'
-                            className='mx-auto'
-                            width={450}
-                            height={450}
-                          />
+                          <br />・
+                          <InlineLink href='/document/college/02.pdf'>
+                            View certificate in PDF
+                          </InlineLink>
                         </li>
+                        <br />
                         <li>
-                          <span class='font-bold '>学業成績通知書・Academic Grade Report</span>
-                          <br />・<InlineLink href='/document/college/01.pdf'>View PDF</InlineLink>
-                          <br />
-                          <Image
-                            src='/document/college/01.jpg'
-                            alt='日本コンピュータ専門学校 学業成績通知書'
-                            className='mx-auto'
-                            width={450}
-                            height={450}
-                          />
+                          <span class='font-bold '>
+                            学業成績通知書・Academic Grade Report (April, 2024 ~ March 15, 2023)
+                          </span>
+                          <br />・
+                          <InlineLink href='/document/college/01.pdf'>
+                            View certificate in PDF
+                          </InlineLink>
                         </li>
                       </ul>
                     </div>
@@ -129,15 +122,10 @@ function certificate() {
                           <span class='font-bold '>
                             卒業証書・Graduation certificate (Mar 19, 2021)
                           </span>
-                          <br />・<InlineLink href='/document/kyoshin/01.pdf'>View PDF</InlineLink>
-                          <br />
-                          <Image
-                            src='/document/kyoshin/01.jpg'
-                            alt='Kyoshin 卒業証書'
-                            className='mx-auto'
-                            width={450}
-                            height={450}
-                          />
+                          <br />・
+                          <InlineLink href='/document/kyoshin/01.pdf'>
+                            View certificate in PDF
+                          </InlineLink>
                         </li>
                       </ul>
                     </div>
