@@ -111,7 +111,7 @@ function Hero() {
             Hi, I&apos;m RJ Jefferson
           </h1>
           <h3 className='ml-0.5 text-xl font-medium tracking-tight sm:text-2xl'>
-            Self-Taught Front End Developer
+            Self-Taught Developer
           </h3>
 
           <p className='mt-6 text-lg text-gray-300'>
@@ -152,7 +152,7 @@ function Hero() {
                       icon={SiLinkedin}
                       rel="me"
                   /> */}
-            <SocialLink href='/Resume.pdf' aria-label='Check out my Resume' icon={IoDocumentText} />
+            <SocialLink href='/resume.pdf' aria-label='Check out my Resume' icon={IoDocumentText} />
             <SocialLink
               href='mailto:jefferson@jeffersonrj.com'
               aria-label='Send me an email'
