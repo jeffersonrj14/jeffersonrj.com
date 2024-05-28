@@ -1,7 +1,12 @@
 import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 
-function PagesMetaHead({ title, keywords, description, icon }) {
+function PagesMetaHead({
+  title = 'Ritch Johan Jefferson - Front-end developer',
+  keywords = 'next.js',
+  description = 'Ritch Johan Jefferson - Portfolio Website',
+  icon = '/author2.png'
+}) {
   return (
     <>
       <NextSeo
@@ -21,7 +26,7 @@ function PagesMetaHead({ title, keywords, description, icon }) {
         }}
       />
 
-      {/*next/head for other customizations */}
+      {/* next/head for other customizations */}
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='keywords' content={keywords} />
@@ -30,13 +35,6 @@ function PagesMetaHead({ title, keywords, description, icon }) {
       </Head>
     </>
   )
-}
-
-PagesMetaHead.defaultProps = {
-  title: 'Ritch Johan Jefferson - Front-end developer',
-  keywords: 'next.js',
-  description: 'Ritch Johan Jefferson - Portfolio Website',
-  icon: '/author2.png'
 }
 
 export default PagesMetaHead
