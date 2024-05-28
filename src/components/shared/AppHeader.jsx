@@ -5,7 +5,6 @@ import { FiX, FiMenu, FiMail } from 'react-icons/fi'
 
 function AppHeader() {
   const [showMenu, setShowMenu] = useState(false)
-  // const [activeTheme, setTheme] = useThemeSwitcher();
 
   function toggleMenu() {
     if (!showMenu) {

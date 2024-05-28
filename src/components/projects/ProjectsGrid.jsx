@@ -5,7 +5,7 @@ import { projectsData } from '../../data/projectsData'
 import ProjectsFilter from './ProjectsFilter'
 
 function ProjectsGrid() {
-  const [searchProject, setSearchProject] = useState()
+  const [setSearchProject] = useState()
   const [selectProject, setSelectProject] = useState()
 
   // @todo - To be fixed
