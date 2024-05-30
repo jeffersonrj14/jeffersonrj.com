@@ -11,6 +11,7 @@ function AboutMeBio() {
             className='rounded-full'
             width={500}
             height={500}
+            priority
           />
         </div>
       </section>

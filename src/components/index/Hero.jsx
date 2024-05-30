@@ -3,12 +3,27 @@ import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { SiGithub, SiTwitter, SiLinkedin, SiInstagram } from 'react-icons/si'
 import NowPlaying from '@/components/Spotify/NowPlaying'
+import toast from 'react-hot-toast'
 
 import { IoMail, IoLogoDiscord, IoDocumentText } from 'react-icons/io5'
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
     <Link className='-m-1 p-1 ' {...props}>
+      <Icon className='h-6 w-6 cursor-pointer fill-gray-500 transition hover:fill-jefferson-main' />
+    </Link>
+  )
+}
+
+function CopyEmail({ icon: Icon, email, ...props }) {
+  const handleClick = (e) => {
+    e.preventDefault() // To prevent opening mail app
+    toast.success('Email copied to clipboard')
+    navigator.clipboard.writeText(email)
+  }
+
+  return (
+    <Link className='-m-1 p-1 ' href={props.href} onClick={handleClick}>
       <Icon className='h-6 w-6 cursor-pointer fill-gray-500 transition hover:fill-jefferson-main' />
     </Link>
   )
@@ -115,35 +130,40 @@ function Hero() {
           </h3>
 
           <p className='mt-6 text-lg text-gray-300'>
-            As an Independent Student, I&apos;m learning every day to improve my skills, practicing
-            problem-solving, and honing my CSS skills on Frontend Mentor. I enjoy creating projects
-            and leveling them up. I&apos;m looking for new opportunities to expand my skills as I
-            learn new languages, with the goal of contributing to open-source projects in the
-            future.
+            As an independent student, I learn every day (4 days a week) to improve my skills.
+            Recently, I started learning DSA and practicing problem-solving on LeetCode. Several
+            startup companies recruited me, but I didn&apos;t pass their tests because I ran out of
+            time on a single question. Although the tests aren&apos;t hard, my problem-solving
+            skills need improvement, I&apos;ve made a commitment to solve 1 to 3 questions each
+            week, starting with the easy ones.
           </p>
           <div className='mt-6 flex gap-6'>
             <SocialLink
               href='https://discordapp.com/users/606481557615542273'
               aria-label='Check out my Discord'
               icon={IoLogoDiscord}
+              target='_blank'
               rel='me'
             />
             <SocialLink
               href='https://instagram.com/jeffersonrj14'
               aria-label='Check out my Instagram'
               icon={SiInstagram}
+              target='_blank'
               rel='me'
             />
             <SocialLink
               href='https://github.com/jeffersonrj14'
               aria-label='Check out my Github'
               icon={SiGithub}
+              target='_blank'
               rel='me'
             />
             <SocialLink
               href='https://twitter.com/jeffersonrj14'
               aria-label='Check out my Twitter'
               icon={SiTwitter}
+              target='_blank'
               rel='me'
             />
             {/* <SocialLink
@@ -153,9 +173,10 @@ function Hero() {
                       rel="me"
                   /> */}
             <SocialLink href='/resume.pdf' aria-label='Check out my Resume' icon={IoDocumentText} />
-            <SocialLink
+            <CopyEmail
               href='mailto:jefferson@jeffersonrj.com'
               aria-label='Send me an email'
+              email='jefferson@jeffersonrj.com'
               icon={IoMail}
             />
           </div>

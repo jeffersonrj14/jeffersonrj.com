@@ -1,5 +1,7 @@
 import React from 'react'
+import Link from 'next/link'
 import { FiGithub, FiMail } from 'react-icons/fi'
+import toast from 'react-hot-toast'
 
 const IntlDateFormatter = new Intl.DateTimeFormat('en-US', {
   timeStyle: 'short',
@@ -28,56 +30,43 @@ const availablestatus = (date) => {
   }
 }
 
-const MyLinks = ({ href, text, rel }) => {
+const handleClick = (e) => {
+  e.preventDefault() // To prevent opening mail app
+  const email = e.currentTarget.getAttribute('email')
+  toast.success('Email copied to clipboard')
+  navigator.clipboard.writeText(email)
+}
+
+function ContactMe({ email, text, ...props }) {
+  const handleClick = (e) => {
+    e.preventDefault() // To prevent opening mail app
+    toast.success('Email copied to clipboard')
+    navigator.clipboard.writeText(email)
+  }
+
+  return (
+    <a
+      href={props.href}
+      onClick={handleClick}
+      className='text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all text-xl hover:underline hover:text-jefferson-main'
+    >
+      {text}
+    </a>
+  )
+}
+
+const MyLinks = ({ href, text, rel, target }) => {
   return (
     <li className='my-2'>
       <a
         href={href}
         rel={rel}
-        target='a_blank'
+        target={target}
         className='text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all text-xl hover:underline hover:text-jefferson-main '
       >
         {text}
       </a>
     </li>
-  )
-}
-
-const CurrentTime = () => {
-  const [currentTime] = React.useState()
-  return (
-    <>
-      <p className='mt-2 font-medium tabular-nums tracking-tight text-xl text-jefferson-light'>
-        {IntlDateFormatter.format(currentTime)} GMT+7
-      </p>
-    </>
-  )
-}
-const Available = () => {
-  const [timeslot, setTimeslot] = React.useState()
-
-  const calculateTime = React.useCallback(() => {
-    const now = new Date()
-    setTimeslot(availablestatus(now))
-  }, [])
-
-  // Timer
-  React.useEffect(() => {
-    calculateTime()
-
-    const interval = setInterval(calculateTime, 1000)
-    return () => clearInterval(interval)
-  }, [calculateTime])
-
-  return (
-    <>
-      <div className='flex items-center justify-center font-medium tracking-tight text-xl text-jefferson-light my-2 '>
-        <div className={` mr-2 h-4 w-4 shrink-0 rounded-full ${timeslot?.color}`}>
-          <div className={`${timeslot?.color} mr-2 h-4 w-4 shrink-0 animate-ping rounded-full`} />
-        </div>
-        {timeslot?.string}
-      </div>
-    </>
   )
 }
 
@@ -115,7 +104,11 @@ const AboutMe = () => {
         </h2>
 
         <ul className='font-medium tracking-tight text-slate-200'>
-          <MyLinks href='mailto:jefferson@jeffersonrj.com' text='Email' />
+          <ContactMe
+            href='mailto:jefferson@jeffersonrj.com'
+            text='Email'
+            email='jefferson@jeffersonrj.com'
+          />
           {/* <MyLinks href='https://www.linkedin.com/in/jeffersonrj14' text='Linkedin' rel='me'/> */}
         </ul>
       </div>
@@ -128,9 +121,9 @@ const AboutMe2 = () => {
     <div className='my-4 grid grid-cols-3 sm:grid-cols-3'>
       <div>
         <ul className='font-medium tracking-tight text-slate-200'>
-          <MyLinks href='/' text='Home' />
-          <MyLinks href='/projects' text='Projects' />
-          <MyLinks href='/about' text='About' />
+          <MyLinks href='/about' text='About' target='_self' />
+          <MyLinks href='/projects' text='Projects' target='_self' />
+          <MyLinks href='/faqs' text='FAQs' target='_self' />
         </ul>
       </div>
       <div>
@@ -138,14 +131,34 @@ const AboutMe2 = () => {
           Socials
         </h2> */}
         <ul className='font-medium tracking-tight text-slate-200'>
-          <MyLinks href='https://github.com/jeffersonrj14' text='GitHub' rel='me' />
-          <MyLinks href='https://discordapp.com/users/606481557615542273' text='Discord' rel='me' />
+          <MyLinks
+            href='https://github.com/jeffersonrj14'
+            text='GitHub'
+            rel='me'
+            target='a_blank'
+          />
+          <MyLinks
+            href='https://discordapp.com/users/606481557615542273'
+            text='Discord'
+            rel='me'
+            target='a_blank'
+          />
         </ul>
       </div>
       <div>
         <ul className='font-medium tracking-tight text-slate-200'>
-          <MyLinks href='https://instagram.com/jeffersonrj14' text='Instagram' rel='me' />
-          <MyLinks href='https://twitter.com/jeffersonrj14' text='Twitter' rel='me' />
+          <MyLinks
+            href='https://instagram.com/jeffersonrj14'
+            text='Instagram'
+            rel='me'
+            target='a_blank'
+          />
+          <MyLinks
+            href='https://twitter.com/jeffersonrj14'
+            text='Twitter'
+            rel='me'
+            target='a_blank'
+          />
           {/* <MyLinks href='https://keybase.io/jeffersonfed' text='Keybase' rel='me'/>  */}
         </ul>
       </div>
@@ -186,12 +199,12 @@ function AppFooter() {
         </div>
         {/* <AppFooterCopyright /> */}
         <hr className=' mx-auto border-t-2 border-primary-light rounded-2xl' />
-        <div className='grid grid-cols-1 sm:grid-cols-2'>
+        <div className='grid grid-cols-1 md:grid-cols-2'>
           <div className='my-4 text-center font-light text-jefferson-light md:text-left '>
             RJ Jefferson &nbsp;
-            <a href='https://github.com/jeffersonrj14' target='__blank' className='inline '>
+            <Link href='https://github.com/jeffersonrj14' target='__blank' className='inline '>
               <FiGithub className='inline' />
-            </a>
+            </Link>
             &nbsp;
             {/* <a
 								href="https://linkedin.com/in/jeffersonrj14"
@@ -201,9 +214,15 @@ function AppFooter() {
 								<FiLinkedin className="inline"/>
 							</a>
 							&nbsp; */}
-            <a href='mailto:jefferson@jeffersonrj.com' target='__blank' className='inline'>
+            <Link
+              href='mailto:jefferson@jeffersonrj.com'
+              aria-label='Send me an email'
+              email='jefferson@jeffersonrj.com'
+              onClick={handleClick}
+              passHref
+            >
               <FiMail className='inline' />
-            </a>
+            </Link>
           </div>
           <div className='my-4 text-center font-light text-jefferson-light md:text-right'>
             &copy; {new Date().getFullYear()} Created using Next.js & Tailwind CSS{' '}
