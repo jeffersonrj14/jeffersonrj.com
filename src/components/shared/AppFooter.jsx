@@ -93,7 +93,7 @@ const AboutMe = () => {
           </span>
           <br />
           <span className='my-2 font-medium tracking-tight text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all text-xl hover:underline hover:text-jefferson-main '>
-            22 y/o | he/him
+            23 y/o | he/him
           </span>
         </ul>
       </div>
@@ -138,8 +138,8 @@ const AboutMe2 = () => {
             target='a_blank'
           />
           <MyLinks
-            href='https://discordapp.com/users/606481557615542273'
-            text='Discord'
+            href='https://leetcode.com/u/jeffersonrj14/'
+            text='LeetCode'
             rel='me'
             target='a_blank'
           />
@@ -148,8 +148,8 @@ const AboutMe2 = () => {
       <div>
         <ul className='font-medium tracking-tight text-slate-200'>
           <MyLinks
-            href='https://instagram.com/jeffersonrj14'
-            text='Instagram'
+            href='https://discordapp.com/users/606481557615542273'
+            text='Discord'
             rel='me'
             target='a_blank'
           />
@@ -201,7 +201,7 @@ function AppFooter() {
         <hr className=' mx-auto border-t-2 border-primary-light rounded-2xl' />
         <div className='grid grid-cols-1 md:grid-cols-2'>
           <div className='my-4 text-center font-light text-jefferson-light md:text-left '>
-            RJ Jefferson &nbsp;
+            Ritch Johan Jefferson &nbsp;
             <Link href='https://github.com/jeffersonrj14' target='__blank' className='inline '>
               <FiGithub className='inline' />
             </Link>

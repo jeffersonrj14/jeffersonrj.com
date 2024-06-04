@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
-import { SiGithub, SiTwitter, SiLinkedin, SiInstagram } from 'react-icons/si'
+import { SiGithub, SiTwitter, SiLinkedin, SiLeetcode } from 'react-icons/si'
 import NowPlaying from '@/components/Spotify/NowPlaying'
 import toast from 'react-hot-toast'
 
@@ -146,9 +146,16 @@ function Hero() {
               rel='me'
             />
             <SocialLink
-              href='https://instagram.com/jeffersonrj14'
-              aria-label='Check out my Instagram'
-              icon={SiInstagram}
+              href='https://twitter.com/jeffersonrj14'
+              aria-label='Check out my Twitter'
+              icon={SiTwitter}
+              target='_blank'
+              rel='me'
+            />
+            <SocialLink
+              href='https://leetcode.com/u/jeffersonrj14/'
+              aria-label='My LeetCode Activity'
+              icon={SiLeetcode}
               target='_blank'
               rel='me'
             />
@@ -159,26 +166,19 @@ function Hero() {
               target='_blank'
               rel='me'
             />
-            <SocialLink
-              href='https://twitter.com/jeffersonrj14'
-              aria-label='Check out my Twitter'
-              icon={SiTwitter}
-              target='_blank'
-              rel='me'
-            />
             {/* <SocialLink
                       href="https://linkedin.com/in/jeffersonrj14"
                       aria-label="Connect with me on LinkedIn"
                       icon={SiLinkedin}
                       rel="me"
                   /> */}
-            <SocialLink href='/resume.pdf' aria-label='Check out my Resume' icon={IoDocumentText} />
             <CopyEmail
               href='mailto:jefferson@jeffersonrj.com'
               aria-label='Send me an email'
               email='jefferson@jeffersonrj.com'
               icon={IoMail}
             />
+            <SocialLink href='/resume.pdf' aria-label='Check out my Resume' icon={IoDocumentText} />
           </div>
 
           <div className='pt-5 text-lg '>

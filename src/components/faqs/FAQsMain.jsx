@@ -1,6 +1,32 @@
 import { motion } from 'framer-motion'
 import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import toast from 'react-hot-toast'
+
+const handleClick = (e) => {
+  e.preventDefault() // To prevent opening mail app
+  const email = e.currentTarget.getAttribute('email')
+  toast.success('Email copied to clipboard')
+  navigator.clipboard.writeText(email)
+}
+
+function ContactMe({ email, text, ...props }) {
+  const handleClick = (e) => {
+    e.preventDefault() // To prevent opening mail app
+    toast.success('Email copied to clipboard')
+    navigator.clipboard.writeText(email)
+  }
+
+  return (
+    <a
+      href={props.href}
+      onClick={handleClick}
+      className='transition-all underline decoration-jefferson-main hover:decoration-jefferson-light text-jefferson-main hover:decoration-wavy hover:decoration-2 hover:underline-offset-2 hover:underline hover:text-jefferson-light'
+    >
+      {text}
+    </a>
+  )
+}
 
 function FAQs() {
   return (
@@ -57,13 +83,17 @@ function FAQs() {
                     sometimes Jefferson, since my name is quite long.
                   </p>
                   <p className='text-jefferson-light mt-3'>
-                    My full name is <em>Ritch Johan Jefferson</em>.
+                    My full name is{' '}
+                    <span className='transition-all underline decoration-jefferson-main hover:decoration-jefferson-light text-jefferson-main hover:decoration-wavy hover:decoration-2 hover:underline-offset-2 hover:underline hover:text-jefferson-light'>
+                      Ritch Johan Jefferson
+                    </span>
+                    .
                   </p>
                 </details>
               </div>
               {/*  */}
               <div className='py-5'>
-                <details className=''>
+                <details className='' onClick=''>
                   <summary className='flex text-left justify-between font-medium cursor-pointer list-none'>
                     <span className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-main'>
                       {' '}
@@ -130,7 +160,7 @@ function FAQs() {
                       href='https://leetcode.com/u/jeffersonrj14/'
                       target='_blank'
                       aria-label='My LeetCode Profile'
-                      className='transition-all underline decoration-slate-400 hover:decoration-jefferson-main hover:decoration-wavy hover:decoration-2 hover:underline-offset-2 hover:underline hover:text-jefferson-main'
+                      className='transition-all underline decoration-jefferson-main hover:decoration-jefferson-light text-jefferson-main hover:decoration-wavy hover:decoration-2 hover:underline-offset-2 hover:underline hover:text-jefferson-light'
                     >
                       LeetCode
                     </Link>{' '}
@@ -139,7 +169,7 @@ function FAQs() {
                       href='https://leetcode.com/studyplan/top-interview-150/'
                       target='_blank'
                       aria-label='Leetcode study plan'
-                      className='transition-all underline decoration-slate-400 hover:decoration-jefferson-main hover:decoration-wavy hover:decoration-2 hover:underline-offset-2 hover:underline hover:text-jefferson-main'
+                      className='transition-all underline decoration-jefferson-main hover:decoration-jefferson-light text-jefferson-main hover:decoration-wavy hover:decoration-2 hover:underline-offset-2 hover:underline hover:text-jefferson-light'
                     >
                       easy problems
                     </Link>{' '}
@@ -178,7 +208,7 @@ function FAQs() {
                       href='https://nextjs.org/docs/getting-started/installation'
                       target='_blank'
                       aria-label='Next.js Installation Guide'
-                      className='text-jefferson-main hover:text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline'
+                      className='transition-all underline decoration-jefferson-main hover:decoration-jefferson-light text-jefferson-main hover:decoration-wavy hover:decoration-2 hover:underline-offset-2 hover:underline hover:text-jefferson-light'
                     >
                       npx create-next-app@latest ./
                     </Link>{' '}
@@ -300,8 +330,31 @@ function FAQs() {
                     </span>
                   </summary>
                   <p className='text-jefferson-light mt-3'>
-                    I would say no, because I&apos;m currently still in the learning process, but I
-                    recently received emails from{' '}
+                    I would say yes because I need experience, but also no because I&apos;m still in
+                    the learning process. However, feel free to contact me via{' '}
+                    <ContactMe
+                      href='mailto:jefferson@jeffersonrj.com'
+                      text='Email'
+                      email='jefferson@jeffersonrj.com'
+                    />{' '}
+                    if you want to recruit me. Here is my{' '}
+                    <Link
+                      href='/resume'
+                      target='_blank'
+                      aria-label='Resume'
+                      className='transition-all underline decoration-jefferson-main hover:decoration-jefferson-light text-jefferson-main hover:decoration-wavy hover:decoration-2 hover:underline-offset-2 hover:underline hover:text-jefferson-light'
+                    >
+                      Resume
+                    </Link>
+                    .
+                  </p>
+                  <blockquote class=' text-jefferson-light mt-3 p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-slate-950'>
+                    <p class='font-normal leading-3 text-jefferson-dark dark:text-white'>
+                      80% yes | 20% no
+                    </p>
+                  </blockquote>
+                  <p className='text-jefferson-light mt-3'>
+                    I also have recently received emails from{' '}
                     <span className='text-jefferson-main'>several startup companies</span>. Several
                     of these companies have expressed interest in having me join their teams.
                     However, before joining their teams, they want to test my skills to determine if
