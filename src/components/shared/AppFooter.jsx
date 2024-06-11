@@ -1,20 +1,57 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { FiGithub, FiMail } from 'react-icons/fi'
 import toast from 'react-hot-toast'
 
-const handleClick = (e) => {
-  e.preventDefault() // To prevent opening mail app
-  const email = e.currentTarget.getAttribute('email')
-  toast.success('Email copied to clipboard')
-  navigator.clipboard.writeText(email)
-}
+// const handleClick = (e) => {
+//   e.preventDefault() // To prevent opening mail app
+//   const email = e.currentTarget.getAttribute('email')
+//   toast.success('Email copied to clipboard')
+//   navigator.clipboard.writeText(email)
+// }
 
-function ContactMe({ email, text, ...props }) {
+// function ContactMe({ email, text, ...props }) {
+//   const handleClick = (e) => {
+//     e.preventDefault() // To prevent opening mail app
+//     toast.success('Email copied to clipboard')
+//     navigator.clipboard.writeText(email)
+//   }
+
+//   return (
+//     <a
+//       href={props.href}
+//       onClick={handleClick}
+//       className='text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all text-xl hover:underline hover:text-jefferson-main'
+//     >
+//       {text}
+//     </a>
+//   )
+// }
+
+const ContactMe = ({ email, text, ...props }) => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => {
+      // When the width is below 1025, the email link will redirect to the email app,
+      // but when it is above 1025, it will be copied to the clipboard.
+      setIsMobile(window.innerWidth < 1025)
+    }
+
+    handleResize() // Check initial width
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
   const handleClick = (e) => {
-    e.preventDefault() // To prevent opening mail app
-    toast.success('Email copied to clipboard')
-    navigator.clipboard.writeText(email)
+    if (!isMobile) {
+      e.preventDefault() // Prevent opening mail app
+      toast.success('Email copied to clipboard')
+      navigator.clipboard.writeText(email)
+    }
   }
 
   return (
@@ -46,16 +83,6 @@ const MyLinks = ({ href, text, rel, target }) => {
 const AboutMe = () => {
   return (
     <div className='my-4 grid grid-cols-2 sm:grid-cols-2  '>
-      {/* <div className="hidden sm:block md:block">
-      		<h2 className='font-header uppercase tracking-tight text-2xl font-extrabold  text-jefferson-light'>
-          		Title
-        	</h2>
-
-        	<ul className='font-medium tracking-tight text-slate-200'>
-			  <MyLinks href='#' text='#' />
-          	</ul>
-      	</div> */}
-
       <div>
         <h2 className='font-header uppercase tracking-tight text-2xl font-extrabold  text-jefferson-light'>
           I am
@@ -129,7 +156,6 @@ const AboutMe2 = () => {
             rel='me'
             target='a_blank'
           />
-          {/* <MyLinks href='https://keybase.io/jeffersonfed' text='Keybase' rel='me'/>  */}
         </ul>
       </div>
     </div>
@@ -160,6 +186,29 @@ const AboutFooter = () => {
 }
 
 function AppFooter() {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 600)
+    }
+
+    handleResize() // Check initial width
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
+  const handleClick = (e) => {
+    if (!isMobile) {
+      e.preventDefault() // Prevent opening mail app
+      const email = e.currentTarget.getAttribute('email')
+      toast.success('Email copied to clipboard')
+      navigator.clipboard.writeText(email)
+    }
+  }
   return (
     <section className='container mx-auto'>
       <div className='pt-20 sm:pt-30 pb-8 mt-20  border-secondary-dark'>

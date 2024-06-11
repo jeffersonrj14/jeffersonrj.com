@@ -18,12 +18,16 @@ function AboutMe() {
         About Me
       </h1>
       <p className='mt-4 text-xl font-medium leading-8 tracking-tight '>
-        Hello, my name is Ritch Johan Jefferson, you can call me Jefferson or Ritch. I&#39;m based
-        in Indonesia
+        Hello, my name is Ritch Johan Jefferson, you can call me Jefferson or Ritch. I&#39;m from
+        Indonesia
       </p>
 
       <p className='mt-4 text-xl font-medium leading-8 tracking-tight '>
-        I am currently studying a Web Development Course in{' '}
+        I am currently studying{' '}
+        <InlineLink href='https://pll.harvard.edu/course/cs50-introduction-computer-science'>
+          CS50
+        </InlineLink>
+        . and taking online courses on{' '}
         <InlineLink href='https://zerotomastery.io'>Zero To Mastery</InlineLink>.
       </p>
 

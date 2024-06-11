@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { FiX, FiMenu } from 'react-icons/fi'
@@ -30,6 +30,22 @@ function CopyEmail({ icon: Icon, email, ...props }) {
 
 function AppHeader() {
   const [showMenu, setShowMenu] = useState(false)
+  const [windowWidth, setWindowWidth] = useState(0)
+
+  // When the width is below 1025, the email link will redirect to the email app,
+  // but when it is above 1025, it will be copied to the clipboard.
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth)
+    }
+
+    handleResize()
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
 
   function toggleMenu() {
     if (!showMenu) {
@@ -117,13 +133,7 @@ function AppHeader() {
           </div>
 
           <div className='border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-secondary-dark'>
-            <Link
-              href='mailto:jefferson@jeffersonrj.com'
-              aria-label='Send me an email'
-              email='jefferson@jeffersonrj.com'
-              onClick={handleClick}
-              passHref
-            >
+            <Link href='mailto:jefferson@jeffersonrj.com' aria-label='Send me an email' passHref>
               <div className='mb-3 text-md font-general-medium bg-jefferson-light  hover:bg-jefferson-main hover:text-jefferson-light  text-jefferson-dark shadow-lg rounded-md px-5 py-2.5 duration-300'>
                 <IoMail className='inline text-xl mr-2' />
                 &nbsp;Contact Me
@@ -167,12 +177,20 @@ function AppHeader() {
 
         {/* Header right section buttons */}
         <div className='hidden sm:flex justify-between items-center gap-2'>
-          <CopyEmail
-            href='mailto:jefferson@jeffersonrj.com'
-            aria-label='Send me an email'
-            email='jefferson@jeffersonrj.com'
-            icon={IoMail}
-          />
+          {windowWidth > 1025 ? (
+            <CopyEmail
+              href='mailto:jefferson@jeffersonrj.com'
+              aria-label='Send me an email'
+              email='jefferson@jeffersonrj.com'
+              icon={IoMail}
+            />
+          ) : (
+            <SocialLink
+              href='mailto:jefferson@jeffersonrj.com'
+              aria-label='Send me an email'
+              icon={IoMail}
+            />
+          )}
           <SocialLink
             href='https://github.com/jeffersonrj14'
             aria-label='Check out my github'

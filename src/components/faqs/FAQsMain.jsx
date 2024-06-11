@@ -44,7 +44,7 @@ function FAQs() {
           <span className='font-general-medium font-bold text-2xl sm:text-4xl mb-1 text-jefferson-light'>
             FAQs{' '}
             <span className='mt-5 text-sm font-normal justify-between text-right tracking-tight sm:text-sm float-right'>
-              Last Updated: May 30, 2024
+              Last Updated: Jun 11, 2024
             </span>
           </span>
 

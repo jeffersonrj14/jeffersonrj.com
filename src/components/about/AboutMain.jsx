@@ -5,6 +5,7 @@ import AboutBackground from './AboutBackground'
 import AboutEducation from './AboutEducation'
 import AboutExperience from './AboutExperience'
 import AboutContact from './AboutContact'
+import CourseWork from './CourseWork'
 
 const MyLinks = ({ href, text, rel }) => {
   return (
@@ -38,9 +39,8 @@ function AboutMain() {
       </section>
 
       <hr className='border-primary-light rounded-2xl mx-44' />
-
       <section className=' pt-10'>
-        <AboutExperience />
+        <CourseWork />
       </section>
 
       <section className=' pt-10'>
