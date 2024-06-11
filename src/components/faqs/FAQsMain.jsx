@@ -56,7 +56,7 @@ function FAQs() {
 
             <div className='grid divide-y text-left divide-neutral-500 w-full mx-auto mt-5 text-lg text-gray-300'>
               <div className='py-5'>
-                <details className=''>
+                <details>
                   <summary className='flex text-left justify-between font-medium cursor-pointer list-none'>
                     <span className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-main'>
                       {' '}
@@ -93,7 +93,7 @@ function FAQs() {
               </div>
               {/*  */}
               <div className='py-5'>
-                <details className='' onClick=''>
+                <details>
                   <summary className='flex text-left justify-between font-medium cursor-pointer list-none'>
                     <span className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-main'>
                       {' '}
@@ -127,7 +127,7 @@ function FAQs() {
                 </details>
               </div>
               {/*  */}
-              <div className='py-5'>
+              {/* <div className='py-5'>
                 <details className=''>
                   <summary className='flex text-left justify-between font-medium cursor-pointer list-none'>
                     <span className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-main'>
@@ -176,10 +176,10 @@ function FAQs() {
                     first.
                   </p>
                 </details>
-              </div>
+              </div> */}
               {/*  */}
               <div className='py-5'>
-                <details className=''>
+                <details>
                   <summary className='flex text-left justify-between font-medium cursor-pointer list-none'>
                     <span className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-main'>
                       {' '}
@@ -222,7 +222,7 @@ function FAQs() {
               </div>
               {/*  */}
               <div className='py-5'>
-                <details className=''>
+                <details>
                   <summary className='flex text-left justify-between font-medium cursor-pointer list-none'>
                     <span className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-main'>
                       {' '}
@@ -271,7 +271,7 @@ function FAQs() {
               </div>
               {/*  */}
               <div className='py-5'>
-                <details className=''>
+                <details>
                   <summary className='flex text-left justify-between font-medium cursor-pointer list-none'>
                     <span className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-main'>
                       {' '}
@@ -298,16 +298,11 @@ function FAQs() {
                     small projects repeatedly without any improvement. That&apos;s why I focus on
                     projects that I feel I can continue to develop.
                   </p>
-                  <p className='text-jefferson-light mt-3'>
-                    Currently, I&apos;m working on other projects while simultaneously learning new
-                    languages. It may take a few weeks for me to become proficient in both the
-                    language and the logic involved.
-                  </p>
                 </details>
               </div>
               {/*  */}
               <div className='py-5'>
-                <details className=''>
+                <details>
                   <summary className='flex text-left justify-between font-medium cursor-pointer list-none'>
                     <span className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-main'>
                       {' '}
@@ -330,14 +325,22 @@ function FAQs() {
                     </span>
                   </summary>
                   <p className='text-jefferson-light mt-3'>
-                    I would say yes because I need experience, but also no because I&apos;m still in
-                    the learning process. However, feel free to contact me via{' '}
+                    Yes, I am open to job opportunities as I am eager to gain experience and grow in
+                    my career. While I am still in the learning process, I believe that practical
+                    experience is invaluable. Therefore, I am about 80% open to opportunities and
+                    about 20% hesitant due to my ongoing learning.
+                  </p>
+                  <p className='text-jefferson-light mt-3'>
+                    I am enthusiastic about challenges and see each opportunity as a chance for
+                    further learning and growth. I do not decline offers that provide a platform for
+                    development. Feel free to contact me via{' '}
                     <ContactMe
                       href='mailto:jefferson@jeffersonrj.com'
                       text='Email'
                       email='jefferson@jeffersonrj.com'
                     />{' '}
-                    if you want to recruit me. Here is my{' '}
+                    if you would like to discuss a potential role or collaboration. You can also
+                    view my{' '}
                     <Link
                       href='/resume'
                       target='_blank'
@@ -345,26 +348,7 @@ function FAQs() {
                       className='transition-all underline decoration-jefferson-main hover:decoration-jefferson-light text-jefferson-main hover:decoration-wavy hover:decoration-2 hover:underline-offset-2 hover:underline hover:text-jefferson-light'
                     >
                       Resume
-                    </Link>
-                    .
-                  </p>
-                  <blockquote class=' text-jefferson-light mt-3 p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-slate-950'>
-                    <p class='font-normal leading-3 text-jefferson-dark dark:text-white'>
-                      80% yes | 20% no
-                    </p>
-                  </blockquote>
-                  <p className='text-jefferson-light mt-3'>
-                    I also have recently received emails from{' '}
-                    <span className='text-jefferson-main'>several startup companies</span>. Several
-                    of these companies have expressed interest in having me join their teams.
-                    However, before joining their teams, they want to test my skills to determine if
-                    I&apos;m a good fit.
-                  </p>
-                  <p className='text-jefferson-light mt-3'>
-                    I would accept this kind of offer to see if I can meet their qualifications.
-                    Even though my skill level may not meet their expectations, I see it as an
-                    opportunity for further learning and growth. I&apos;m the type of person who
-                    would not decline such offers.
+                    </Link>{' '}
                   </p>
                   <blockquote class=' text-jefferson-light mt-3 p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-slate-950'>
                     <p class='italic font-normal leading-relaxed text-jefferson-dark dark:text-white'>

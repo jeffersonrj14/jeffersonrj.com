@@ -131,11 +131,9 @@ function Hero() {
 
           <p className='mt-6 text-lg text-gray-300'>
             As an independent student, I learn every day (4 days a week) to improve my skills.
-            Recently, I started learning DSA and practicing problem-solving on LeetCode. Several
-            startup companies recruited me, but I didn&apos;t pass their tests because I ran out of
-            time on a single question. Although the tests aren&apos;t hard, my problem-solving
-            skills need improvement, I&apos;ve made a commitment to solve 1 to 3 questions each
-            week, starting with the easy ones.
+            Recently, I started learning DSA (Data Structures and Algorithms) and practicing
+            problem-solving on LeetCode. I am committed to solving 1 to 3 questions each week,
+            starting with the easy ones, to improve my problem-solving skills.
           </p>
           <div className='mt-6 flex gap-6'>
             <SocialLink

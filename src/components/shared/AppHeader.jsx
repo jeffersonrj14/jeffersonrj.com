@@ -112,7 +112,7 @@ function AppHeader() {
           </div>
           <div className='block text-left text-lg text-ternary-light hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2'>
             <Link href='/faqs' aria-label='Frequently Asked Questions'>
-              FAQs
+              FAQ
             </Link>
           </div>
 
@@ -161,7 +161,7 @@ function AppHeader() {
             className='block text-left text-lg font-medium text-ternary-light hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2'
             aria-label='Frequently Asked Questions'
           >
-            <Link href='/faqs'>FAQs</Link>
+            <Link href='/faqs'>FAQ</Link>
           </div>
         </div>
 

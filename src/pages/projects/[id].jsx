@@ -33,7 +33,7 @@ function ProjectSingle(props) {
         </div>
 
         {/* Gallery */}
-        <div className='grid grid-cols-1 sm:grid-cols-1 sm:gap-10 mt-12'>
+        {/* <div className='grid grid-cols-1 sm:grid-cols-1 sm:gap-10 mt-12'>
           {props.project.ProjectImages.map((project) => {
             return (
               <div className='mb-10 sm:mb-0' key={project.id}>
@@ -49,7 +49,7 @@ function ProjectSingle(props) {
               </div>
             )
           })}
-        </div>
+        </div> */}
 
         {/* Info */}
         <div className='block sm:flex gap-0 sm:gap-10 mt-14'>
@@ -162,6 +162,23 @@ function ProjectSingle(props) {
 
           {/*  Single project right section details */}
           <div className='w-full sm:w-2/3 text-left mt-10 sm:mt-0'>
+            <div className='grid grid-cols-1 sm:grid-cols-1 sm:gap-10 mb-6'>
+              {props.project.ProjectImages.map((project) => {
+                return (
+                  <div className='mb-10 sm:mb-0 border' key={project.id}>
+                    <Image
+                      src={project.img}
+                      className='rounded-xl cursor-pointer shadow-xl sm:shadow-xl'
+                      alt={project.title}
+                      key={project.id}
+                      layout='responsive'
+                      width={100}
+                      height={90}
+                    />
+                  </div>
+                )
+              })}
+            </div>
             <p className='text-primary-light text-3xl font-bold mb-7'>
               {props.project.ProjectInfo.ProjectDetailsHeading}
             </p>

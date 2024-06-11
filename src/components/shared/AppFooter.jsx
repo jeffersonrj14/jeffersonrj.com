@@ -3,33 +3,6 @@ import Link from 'next/link'
 import { FiGithub, FiMail } from 'react-icons/fi'
 import toast from 'react-hot-toast'
 
-const IntlDateFormatter = new Intl.DateTimeFormat('en-US', {
-  timeStyle: 'short',
-  timeZone: 'Asia/Jakarta',
-  hour12: false
-})
-
-const availablestatus = (date) => {
-  if (date == null) return { color: '', string: '' }
-  const h = parseInt(IntlDateFormatter.format(date).split(':')[0])
-
-  if (h < 2) {
-    return { color: 'bg-green-500', string: 'Live' }
-  } else if (h < 9) {
-    return { color: 'bg-amber-600', string: 'Sleep' }
-  } else if (h < 14) {
-    return { color: 'bg-red-500', string: 'Busy-Study' }
-  } else if (h < 17) {
-    return { color: 'bg-amber-600', string: 'Nap' }
-  } else if (h < 21) {
-    return { color: 'bg-red-500', string: 'Busy-Study' }
-  } else if (h < 24) {
-    return { color: 'bg-green-500', string: 'Available' }
-  } else {
-    return { color: 'bg-red-500', string: 'Busy-Study' }
-  }
-}
-
 const handleClick = (e) => {
   e.preventDefault() // To prevent opening mail app
   const email = e.currentTarget.getAttribute('email')
@@ -123,13 +96,10 @@ const AboutMe2 = () => {
         <ul className='font-medium tracking-tight text-slate-200'>
           <MyLinks href='/about' text='About' target='_self' />
           <MyLinks href='/projects' text='Projects' target='_self' />
-          <MyLinks href='/faqs' text='FAQs' target='_self' />
+          <MyLinks href='/faqs' text='FAQ' target='_self' />
         </ul>
       </div>
       <div>
-        {/* <h2 className='pt-4 font-header text-lg font-bold uppercase tracking-tight text-primary-dark dark:text-jefferson-light'>
-          Socials
-        </h2> */}
         <ul className='font-medium tracking-tight text-slate-200'>
           <MyLinks
             href='https://github.com/jeffersonrj14'

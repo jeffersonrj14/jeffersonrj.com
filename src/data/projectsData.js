@@ -129,20 +129,20 @@ export const projectsData = [
   // =======================================================
   {
     id: 2,
-    title: 'Reminder Discord Bot',
-    url: 'https://github.com/jeffersonrj14/discord-study-remainder-bot',
-    category: 'Project',
-    img: '/images/projects/bot/1.png',
+    title: 'Utilities',
+    url: 'https://hi.jeffersonrj.com',
+    category: 'Projects',
+    img: '/images/projects/utils/logo.png',
     ProjectHeader: {
-      title: 'Reminder Discord Bot',
-      publishDate: 'Jan 01, 2024',
-      tags: 'Project'
+      title: 'Utilities',
+      publishDate: 'June 9, 2024',
+      tags: 'Projects'
     },
     ProjectImages: [
       {
         id: uuidv4(),
-        title: 'Reminder Discord Bot',
-        img: '/images/projects/bot/result.png'
+        title: 'Utilities',
+        img: '/images/projects/utils/hi.png'
       }
     ],
     ProjectInfo: {
@@ -151,20 +151,30 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: 'Name',
-          details: 'Reminder Discord Bot'
+          details: 'Utilities'
         },
         {
           id: uuidv4(),
           title: 'Github',
           details: 'Github Code',
-          url: 'https://github.com/jeffersonrj14/discord-study-remainder-bot'
+          url: 'https://github.com/jeffersonrj14/hi.jeffersonrj.com'
+        },
+        {
+          id: uuidv4(),
+          title: 'Website',
+          details: 'Click here for Live Preview',
+          url: 'https://hi.jeffersonrj.com'
         }
       ],
       FeatureHeading: 'Features',
       FeatureDetails: [
         {
           id: uuidv4(),
-          details: 'Study reminders'
+          details: 'Utilites'
+        },
+        {
+          id: uuidv4(),
+          details: 'Blog Posts'
         }
       ],
 
@@ -172,21 +182,46 @@ export const projectsData = [
       TechnologiesDetails: [
         {
           id: uuidv4(),
-          details: 'Node.js',
-          url: 'https://nodejs.org/en'
+          details: 'Astro',
+          url: 'https://astro.build/'
         },
         {
           id: uuidv4(),
-          details: 'Discord.js',
-          url: 'https://discord.js.org/'
+          details: 'TypeScript',
+          url: 'https://www.typescriptlang.org/'
+        },
+        {
+          id: uuidv4(),
+          details: 'Tailwind CSS',
+          url: 'https://tailwindcss.com/'
+        },
+        {
+          id: uuidv4(),
+          details: 'SolidJS',
+          url: 'https://www.solidjs.com/'
+        },
+        {
+          id: uuidv4(),
+          details: 'Vercel',
+          url: 'https://vercel.com/'
         }
       ],
-      InspirationHeading: 'Inspiration',
+      InspirationHeading: 'Documentation',
       InspirationDetails: [
         {
           id: uuidv4(),
-          details: 'Discord Bot',
-          url: 'https://github.com/odziem/discord-bot'
+          details: 'Build blog with Astro',
+          url: 'https://docs.astro.build/en/tutorial/0-introduction/'
+        },
+        {
+          id: uuidv4(),
+          details: 'TypeScript crash course',
+          url: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9gNhFQgS4edYLqP7LkZcFMN'
+        },
+        {
+          id: uuidv4(),
+          details: 'SolidJS crash course',
+          url: 'https://youtube.com/playlist?list=PL4cUxeGkcC9gU_GvFygZFu0aBysPilkbB&si=Pj0S59LUW4a-FwIj'
         }
       ],
       ProjectDetailsHeading: 'Main Goal',
@@ -194,14 +229,25 @@ export const projectsData = [
         {
           id: uuidv4(),
           details:
-            'Created a reminder bot using Node.js to help users manage study schedules effectively. This is an ongoing fun project in which I will be adding new commands to the bot, making it more interactive and innovative.'
+            'Creating utilities/tools that I might need from time to time and also a few posts will be posted here as a reminder to myself.'
         }
       ],
       ProjectSecondDetailsHeading: 'My Difficulty',
       ProjectSecondDetails: [
         {
           id: uuidv4(),
-          details: ' Have not been able to add the /stop command.'
+          details:
+            'Adopting Astro Framework and Solid JS was initially challenging due to their unique concepts and syntax. I spent a significant amount of time reading documentation, watching tutorials, and experimenting with small projects to get comfortable with these tools. This hands-on approach was crucial in overcoming the learning curve.'
+        },
+        {
+          id: uuidv4(),
+          details:
+            'One of my goals for this project was to practice with TypeScript. Having primarily used JavaScript in the most of time, I wanted to familiarize myself with TypeScript’s static typing system. This meant I needed to define the types for my props and state upfront, which added an initial layer of complexity.'
+        },
+        {
+          id: uuidv4(),
+          details:
+            'Creating a blog with Markdown came with its own set of challenges. When I originally started using Markdown for my blog entries, I didn’t understand why the styles weren’t applying correctly. I did some research and found that in order to render Markdown, I needed to add custom CSS. To solve this, I created a post.css file in the styles directory specifically for styling Markdown content.'
         }
       ]
     }
