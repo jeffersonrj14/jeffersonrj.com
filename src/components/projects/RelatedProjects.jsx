@@ -13,21 +13,9 @@ const RelatedProject = {
     {
       id: uuidv4(),
       title: 'Projects',
-      img: '/images/projects/bot/1.png',
+      img: '/images/projects/utils/logo.png',
       href: '/projects/2'
     }
-    // {
-    // 	id: uuidv4(),
-    // 	title: 'Projects',
-    // 	img: '/images/projects/portfolio/1.png',
-    // 	href: '/projects/1',
-    // },
-    // {
-    // 	id: uuidv4(),
-    // 	title: 'Projects',
-    // 	img: '/images/projects/portfolio/1.png',
-    // 	href: '/projects/1',
-    // },
   ]
 }
 
