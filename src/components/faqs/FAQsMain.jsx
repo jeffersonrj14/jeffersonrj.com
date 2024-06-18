@@ -1,14 +1,6 @@
 import { motion } from 'framer-motion'
-import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import toast from 'react-hot-toast'
-
-const handleClick = (e) => {
-  e.preventDefault() // To prevent opening mail app
-  const email = e.currentTarget.getAttribute('email')
-  toast.success('Email copied to clipboard')
-  navigator.clipboard.writeText(email)
-}
 
 function ContactMe({ email, text, ...props }) {
   const handleClick = (e) => {
@@ -66,11 +58,11 @@ function FAQs() {
                       <svg
                         fill='none'
                         height='24'
-                        shape-rendering='geometricPrecision'
+                        shapeRendering='geometricPrecision'
                         stroke='currentColor'
-                        stroke-linecap='round'
-                        stroke-linejoin='round'
-                        stroke-width='1.5'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth='1.5'
                         viewBox='0 0 24 24'
                         width='24'
                       >
@@ -103,11 +95,11 @@ function FAQs() {
                       <svg
                         fill='none'
                         height='24'
-                        shape-rendering='geometricPrecision'
+                        shapeRendering='geometricPrecision'
                         stroke='currentColor'
-                        stroke-linecap='round'
-                        stroke-linejoin='round'
-                        stroke-width='1.5'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth='1.5'
                         viewBox='0 0 24 24'
                         width='24'
                       >
@@ -127,57 +119,6 @@ function FAQs() {
                 </details>
               </div>
               {/*  */}
-              {/* <div className='py-5'>
-                <details className=''>
-                  <summary className='flex text-left justify-between font-medium cursor-pointer list-none'>
-                    <span className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-main'>
-                      {' '}
-                      Have you started to improve your problem-solving skills?
-                    </span>
-                    <span className='transition group-open:rotate-180'>
-                      <svg
-                        fill='none'
-                        height='24'
-                        shape-rendering='geometricPrecision'
-                        stroke='currentColor'
-                        stroke-linecap='round'
-                        stroke-linejoin='round'
-                        stroke-width='1.5'
-                        viewBox='0 0 24 24'
-                        width='24'
-                      >
-                        <path d='M6 9l6 6 6-6'></path>
-                      </svg>
-                    </span>
-                  </summary>
-                  <p className='text-jefferson-light mt-3'>
-                    Yes, I recently started to improve my problem-solving skills and also began
-                    studying Data Structures and Algorithms (DSA) to further enhance them.
-                  </p>
-                  <p className='text-jefferson-light mt-3'>
-                    I will be focusing to improve my problem solving skills on{' '}
-                    <Link
-                      href='https://leetcode.com/u/jeffersonrj14/'
-                      target='_blank'
-                      aria-label='My LeetCode Profile'
-                      className='transition-all underline decoration-jefferson-main hover:decoration-jefferson-light text-jefferson-main hover:decoration-wavy hover:decoration-2 hover:underline-offset-2 hover:underline hover:text-jefferson-light'
-                    >
-                      LeetCode
-                    </Link>{' '}
-                    I will start with the{' '}
-                    <Link
-                      href='https://leetcode.com/studyplan/top-interview-150/'
-                      target='_blank'
-                      aria-label='Leetcode study plan'
-                      className='transition-all underline decoration-jefferson-main hover:decoration-jefferson-light text-jefferson-main hover:decoration-wavy hover:decoration-2 hover:underline-offset-2 hover:underline hover:text-jefferson-light'
-                    >
-                      easy problems
-                    </Link>{' '}
-                    first.
-                  </p>
-                </details>
-              </div> */}
-              {/*  */}
               <div className='py-5'>
                 <details>
                   <summary className='flex text-left justify-between font-medium cursor-pointer list-none'>
@@ -189,11 +130,11 @@ function FAQs() {
                       <svg
                         fill='none'
                         height='24'
-                        shape-rendering='geometricPrecision'
+                        shapeRendering='geometricPrecision'
                         stroke='currentColor'
-                        stroke-linecap='round'
-                        stroke-linejoin='round'
-                        stroke-width='1.5'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth='1.5'
                         viewBox='0 0 24 24'
                         width='24'
                       >
@@ -232,11 +173,11 @@ function FAQs() {
                       <svg
                         fill='none'
                         height='24'
-                        shape-rendering='geometricPrecision'
+                        shapeRendering='geometricPrecision'
                         stroke='currentColor'
-                        stroke-linecap='round'
-                        stroke-linejoin='round'
-                        stroke-width='1.5'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth='1.5'
                         viewBox='0 0 24 24'
                         width='24'
                       >
@@ -281,11 +222,11 @@ function FAQs() {
                       <svg
                         fill='none'
                         height='24'
-                        shape-rendering='geometricPrecision'
+                        shapeRendering='geometricPrecision'
                         stroke='currentColor'
-                        stroke-linecap='round'
-                        stroke-linejoin='round'
-                        stroke-width='1.5'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth='1.5'
                         viewBox='0 0 24 24'
                         width='24'
                       >
@@ -312,11 +253,11 @@ function FAQs() {
                       <svg
                         fill='none'
                         height='24'
-                        shape-rendering='geometricPrecision'
+                        shapeRendering='geometricPrecision'
                         stroke='currentColor'
-                        stroke-linecap='round'
-                        stroke-linejoin='round'
-                        stroke-width='1.5'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth='1.5'
                         viewBox='0 0 24 24'
                         width='24'
                       >

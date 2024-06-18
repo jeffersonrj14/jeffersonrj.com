@@ -4,9 +4,6 @@ import {
   SiHtml5,
   SiCss3,
   SiJavascript,
-  SiTypescript,
-  SiNodedotjs,
-  SiPostgresql,
   SiTailwindcss,
   SiGit,
   SiGithub,
@@ -32,10 +29,6 @@ const skills = [
     name: 'JavaScript',
     logo: SiJavascript
   },
-  // {
-  //   name: 'TypeScript',
-  //   logo: SiTypescript
-  // },
   {
     name: 'React',
     logo: SiReact
@@ -48,14 +41,6 @@ const skills = [
     name: 'Tailwind CSS',
     logo: SiTailwindcss
   },
-  // {
-  //   name: 'Node.JS',
-  //   logo: SiNodedotjs
-  // },
-  // {
-  //   name: 'PostGreSQL',
-  //   logo: SiPostgresql
-  // },
   {
     name: 'Git',
     logo: SiGit

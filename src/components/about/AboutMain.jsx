@@ -3,7 +3,6 @@ import Link from 'next/link'
 import AboutMe from './AboutMe'
 import AboutBackground from './AboutBackground'
 import AboutEducation from './AboutEducation'
-import AboutExperience from './AboutExperience'
 import AboutContact from './AboutContact'
 import CourseWork from './CourseWork'
 

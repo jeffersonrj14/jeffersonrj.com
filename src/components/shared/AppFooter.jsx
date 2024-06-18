@@ -3,31 +3,6 @@ import Link from 'next/link'
 import { FiGithub, FiMail } from 'react-icons/fi'
 import toast from 'react-hot-toast'
 
-// const handleClick = (e) => {
-//   e.preventDefault() // To prevent opening mail app
-//   const email = e.currentTarget.getAttribute('email')
-//   toast.success('Email copied to clipboard')
-//   navigator.clipboard.writeText(email)
-// }
-
-// function ContactMe({ email, text, ...props }) {
-//   const handleClick = (e) => {
-//     e.preventDefault() // To prevent opening mail app
-//     toast.success('Email copied to clipboard')
-//     navigator.clipboard.writeText(email)
-//   }
-
-//   return (
-//     <a
-//       href={props.href}
-//       onClick={handleClick}
-//       className='text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all text-xl hover:underline hover:text-jefferson-main'
-//     >
-//       {text}
-//     </a>
-//   )
-// }
-
 const ContactMe = ({ email, text, ...props }) => {
   const [isMobile, setIsMobile] = useState(false)
 
@@ -225,14 +200,6 @@ function AppFooter() {
               <FiGithub className='inline' />
             </Link>
             &nbsp;
-            {/* <a
-								href="https://linkedin.com/in/jeffersonrj14"
-								target="__blank"
-								className="inline"
-							>
-								<FiLinkedin className="inline"/>
-							</a>
-							&nbsp; */}
             <Link
               href='mailto:jefferson@jeffersonrj.com'
               aria-label='Send me an email'

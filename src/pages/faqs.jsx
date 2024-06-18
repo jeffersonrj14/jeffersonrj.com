@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import PagesMetaHead from '@/components/PagesMetaHead'
 import FAQsMain from '@/components/faqs/FAQsMain'
 

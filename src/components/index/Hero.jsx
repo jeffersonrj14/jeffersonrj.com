@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
-import { SiGithub, SiTwitter, SiLinkedin, SiLeetcode } from 'react-icons/si'
+import { SiGithub, SiTwitter, SiLeetcode } from 'react-icons/si'
 import NowPlaying from '@/components/Spotify/NowPlaying'
 import toast from 'react-hot-toast'
 
@@ -164,12 +164,6 @@ function Hero() {
               target='_blank'
               rel='me'
             />
-            {/* <SocialLink
-                      href="https://linkedin.com/in/jeffersonrj14"
-                      aria-label="Connect with me on LinkedIn"
-                      icon={SiLinkedin}
-                      rel="me"
-                  /> */}
             <CopyEmail
               href='mailto:jefferson@jeffersonrj.com'
               aria-label='Send me an email'
