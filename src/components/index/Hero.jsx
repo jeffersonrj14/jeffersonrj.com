@@ -178,7 +178,7 @@ function Hero() {
             <Available />
           </div>
 
-          <div className='pt-5 relative'>
+          <div className='pt-2 pb-5 relative'>
             <div className='absolute left-0'>
               <NowPlaying />
             </div>

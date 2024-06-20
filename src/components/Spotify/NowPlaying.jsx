@@ -49,12 +49,12 @@ export default function NowPlaying() {
         <Image
           src={data?.albumImage}
           alt='album lmage'
-          className='object-cover object-center rounded-half rounded-full motion-safe:animate-spin motion-safe:[animation-duration:8s] group-hocus/music:motion-safe:[animation-play-state:paused]'
-          width={26}
-          height={26}
+          className='object-cover object-center rounded-lg'
+          width={40}
+          height={40}
         />
       )}
-      <div className='inline-flex whitespace-nowrap sm:flex-row'>
+      <div className='inline-flex whitespace-nowrap flex-col'>
         {data?.songUrl ? (
           <a
             className='font-medium whitespace-nowrap max-w-sm overflow-ellipsis'
@@ -67,7 +67,6 @@ export default function NowPlaying() {
         ) : (
           <p className='font-medium'>Not Playing</p>
         )}
-        <span className='mx-2 sm:block'> – </span>
         <p className='whitespace-nowrap max-w-max lg:w-full w-6'>{data?.artist ?? 'Spotify'}</p>
       </div>
     </div>
