@@ -232,7 +232,7 @@ a {
 
 /* Scroll to top style */
 .scrollToTop {
-  @apply bg-jefferson-main;
+  @apply bg-jefferson-maindark dark:bg-jefferson-main;
   @apply text-jefferson-light;
   position: fixed;
   width: 100%;
