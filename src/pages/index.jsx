@@ -16,7 +16,7 @@ export default function Home() {
 
       <div className='mt-10 sm:mt-15 flex justify-center'>
         <Link href='/projects' aria-label='More Projects' passHref>
-          <div className='font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-jefferson-light  hover:bg-jefferson-maindark  dark:hover:bg-jefferson-main hover:text-jefferson-light text-jefferson-dark focus:ring-1 focus:ring-indigo-900 text-lg sm:text-xl duration-300'>
+          <div className='font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-jefferson-dark dark:bg-jefferson-light  hover:bg-jefferson-maindark  dark:hover:bg-jefferson-main hover:text-jefferson-light text-jefferson-light dark:text-jefferson-dark focus:ring-1 focus:ring-indigo-900 text-lg sm:text-xl duration-300'>
             <Button title='More Projects' />
           </div>
         </Link>
