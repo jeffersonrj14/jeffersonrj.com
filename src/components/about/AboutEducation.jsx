@@ -4,7 +4,7 @@ const MyLinks = ({ href, text, rel }) => {
       href={href}
       rel={rel}
       target='a_blank'
-      className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-main'
+      className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-maindark hover:dark:text-jefferson-main '
     >
       {text}
     </a>
@@ -47,7 +47,7 @@ function AboutEducation() {
           <div>
             <ul>
               <li className='my-2'>Grade: Cumulative GPA: 3.7/4.0</li>
-              <li className='my-2 font-semibold decoration-wavy decoration-2 underline-offset-4 hover:underline text-jefferson-main hover:text-jefferson-light'>
+              <li className='my-2 font-semibold decoration-wavy decoration-2 underline-offset-4 hover:underline text-jefferson-maindark dark:text-jefferson-main hover:text-jefferson-dark hover:dark:text-jefferson-light'>
                 Relevant Courses
               </li>
               <ul>

@@ -20,11 +20,11 @@ function ProjectsGrid() {
   return (
     <section className='pt-5'>
       <div className='text-left '>
-        <p className='font-general-medium font-bold text-2xl sm:text-4xl mb-1 text-jefferson-light '>
+        <p className='font-general-medium font-bold text-2xl sm:text-4xl mb-1 text-jefferson-dark dark:text-jefferson-light '>
           Projects
         </p>
       </div>
-      <hr className='h-px my-2 border-0 bg-jefferson-light rounded-full ' />
+      <hr className='h-px my-2 border-0 bg-jefferson-dark dark:bg-jefferson-light rounded-full ' />
 
       <div className='mt-5 sm:mt-8'>
         <div
@@ -40,14 +40,16 @@ function ProjectsGrid() {
               className='
                         hidden
                         sm:block
-                        bg-jefferson-dark
+                        bg-jefferson-light
+                        dark:bg-jefferson-dark
+
                         p-2.5
                         shadow-sm
                         rounded-xl
                         cursor-pointer
                         '
             >
-              <FiSearch className='text-jefferson-light w-5 h-5'></FiSearch>
+              <FiSearch className='text-jefferson-dark dark:text-jefferson-light w-5 h-5'></FiSearch>
             </span>
             <input
               onChange={(e) => {
@@ -61,12 +63,15 @@ function ProjectsGrid() {
                         py-2
                         border 
                         font-medium
-                        border-jefferson-light
+                        border-jefferson-dark
+                        dark:border-jefferson-light
                         rounded-lg
                         text-sm
                         sm:text-md
-                        bg-jefferson-dark
-                        text-jefferson-light
+                        bg-jefferson-light
+                        dark:bg-jefferson-dark
+                        text-jefferson-dark
+                        dark:text-jefferson-light
                         '
               id='name'
               name='name'

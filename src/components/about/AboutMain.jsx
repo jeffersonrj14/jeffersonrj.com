@@ -29,7 +29,7 @@ const InlineLink = ({ href, children }) => (
 
 function AboutMain() {
   return (
-    <div className='pt-20 container mx-auto relative text-jefferson-light '>
+    <div className='pt-20 container mx-auto relative text-jefferson-dark dark:text-jefferson-light '>
       <AboutMe />
       <AboutBackground />
 

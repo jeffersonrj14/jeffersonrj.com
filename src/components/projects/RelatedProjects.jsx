@@ -21,8 +21,8 @@ const RelatedProject = {
 
 function RelatedProjects() {
   return (
-    <div className='mt-10 pt-10 sm:pt-14 sm:mt-20 border-t-2 border-primary-light '>
-      <p className='font-general-regular text-primary-light text-3xl font-bold mb-10 sm:mb-14 text-left'>
+    <div className='mt-10 pt-10 sm:pt-14 sm:mt-20 border-t-2 border-jefferson-dark dark:border-primary-light '>
+      <p className='font-general-regular text-jefferson-dark dark:text-primary-light text-3xl font-bold mb-10 sm:mb-14 text-left'>
         {RelatedProject.title}
       </p>
 

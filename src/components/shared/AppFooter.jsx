@@ -33,7 +33,7 @@ const ContactMe = ({ email, text, ...props }) => {
     <a
       href={props.href}
       onClick={handleClick}
-      className='text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all text-xl hover:underline hover:text-jefferson-main'
+      className='text-jefferson-dark dark:text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all text-xl hover:underline hover:text-jefferson-maindark hover:dark:text-jefferson-main'
     >
       {text}
     </a>
@@ -47,7 +47,7 @@ const MyLinks = ({ href, text, rel, target }) => {
         href={href}
         rel={rel}
         target={target}
-        className='text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all text-xl hover:underline hover:text-jefferson-main '
+        className='text-jefferson-dark dark:text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all text-xl hover:underline hover:text-jefferson-maindark hover:dark:text-jefferson-main'
       >
         {text}
       </a>
@@ -59,22 +59,22 @@ const AboutMe = () => {
   return (
     <div className='my-4 grid grid-cols-2 sm:grid-cols-2  '>
       <div>
-        <h2 className='font-header uppercase tracking-tight text-2xl font-extrabold  text-jefferson-light'>
+        <h2 className='font-header uppercase tracking-tight text-2xl font-extrabold  text-jefferson-dark dark:text-jefferson-light'>
           I am
         </h2>
         <ul className='font-medium tracking-tight text-slate-200'>
-          <span className='my-2 font-medium tracking-tight text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all text-xl hover:underline hover:text-jefferson-main '>
+          <span className='my-2 font-medium tracking-tight text-jefferson-dark dark:text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all text-xl hover:underline hover:text-jefferson-maindark hover:dark:text-jefferson-main'>
             RJ Jefferson
           </span>
           <br />
-          <span className='my-2 font-medium tracking-tight text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all text-xl hover:underline hover:text-jefferson-main '>
+          <span className='my-2 font-medium tracking-tight text-jefferson-dark dark:text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all text-xl hover:underline hover:text-jefferson-maindark hover:dark:text-jefferson-main'>
             23 y/o | he/him
           </span>
         </ul>
       </div>
 
       <div>
-        <h2 className='font-header uppercase tracking-tight text-2xl font-extrabold  text-jefferson-light'>
+        <h2 className='font-header uppercase tracking-tight text-2xl font-extrabold  text-jefferson-dark dark:text-jefferson-light'>
           Contact Me
         </h2>
 
@@ -142,10 +142,10 @@ const AboutFooter = () => {
       <AboutMe />
 
       <div className='inline-flex items-center justify-center w-full'>
-        <hr className='w-4/5 h-1 my-8  border-0 rounded bg-gray-700' />
-        <div className='absolute px-4 -translate-x-1/2  left-1/2 bg-jefferson-dark'>
+        <hr className='w-4/5 h-1 my-8  border-0 rounded bg-black/20 dark:bg-gray-700' />
+        <div className='absolute px-4 -translate-x-1/2  left-1/2 bg-jefferson-light dark:bg-jefferson-dark'>
           <svg
-            className='w-4 h-4 text-gray-300'
+            className='w-4 h-4 text-gray-800 dark:text-gray-300'
             aria-hidden='true'
             xmlns='http://www.w3.org/2000/svg'
             fill='currentColor'
@@ -187,14 +187,14 @@ function AppFooter() {
   return (
     <section className='container mx-auto'>
       <div className='pt-20 sm:pt-30 pb-8 mt-20  border-secondary-dark'>
-        <hr className=' mx-auto border-t-2 border-primary-light rounded-2xl' />
+        <hr className=' mx-auto border-t-2 border-primary-dark dark:border-primary-light  rounded-2xl' />
         <div className='mt-2 flex w-full flex-col text-center '>
           <AboutFooter />
         </div>
         {/* <AppFooterCopyright /> */}
-        <hr className=' mx-auto border-t-2 border-primary-light rounded-2xl' />
+        <hr className=' mx-auto border-t-2 border-primary-dark dark:border-primary-light  rounded-2xl' />
         <div className='grid grid-cols-1 md:grid-cols-2'>
-          <div className='my-4 text-center font-light text-jefferson-light md:text-left '>
+          <div className='my-4 text-center font-normal text-jefferson-dark dark:text-jefferson-light md:text-left '>
             Ritch Johan Jefferson &nbsp;
             <Link href='https://github.com/jeffersonrj14' target='__blank' className='inline '>
               <FiGithub className='inline' />
@@ -210,7 +210,7 @@ function AppFooter() {
               <FiMail className='inline' />
             </Link>
           </div>
-          <div className='my-4 text-center font-light text-jefferson-light md:text-right'>
+          <div className='my-4 text-center font-normal text-jefferson-dark dark:text-jefferson-light md:text-right'>
             &copy; {new Date().getFullYear()} Created using Next.js & Tailwind CSS{' '}
           </div>
         </div>

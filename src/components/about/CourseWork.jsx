@@ -4,7 +4,7 @@ const MyLinks = ({ href, text, rel }) => {
       href={href}
       rel={rel}
       target='a_blank'
-      className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-main'
+      className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-maindark hover:dark:text-jefferson-main'
     >
       {text}
     </a>
@@ -17,7 +17,7 @@ const CourseList = ({ href, text, rel }) => {
         href={href}
         rel={rel}
         target='a_blank'
-        className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline text-jefferson-main hover:text-jefferson-light active:text-jefferson-maindark'
+        className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline text-jefferson-maindark dark:text-jefferson-main hover:text-jefferson-dark hover:dark:text-jefferson-light active:text-jefferson-main active:dark:text-jefferson-maindark'
       >
         {text}
       </a>
@@ -42,7 +42,9 @@ function CourseWork() {
         </div>
         <div className='flex flex-col col-span-4 text-xl'>
           <div>
-            <span className='font-semibold text-jefferson-light'>Course:</span>
+            <span className='font-semibold text-jefferson-dark dark:text-jefferson-light'>
+              Course:
+            </span>
             <CourseList
               href='https://cs50.harvard.edu/python/2022/'
               text="CS50's Introduction to Programming with Python"
@@ -73,7 +75,9 @@ function CourseWork() {
         </div>
         <div className='flex flex-col col-span-4 text-xl'>
           <div>
-            <span className='font-semibold text-jefferson-light'>Course:</span>
+            <span className='font-semibold text-jefferson-dark dark:text-jefferson-light'>
+              Course:
+            </span>
             <CourseList
               href='https://zerotomastery.io/courses/coding-bootcamp/'
               text='The Complete Web Developer in 2024: Zero to Mastery'

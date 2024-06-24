@@ -13,19 +13,19 @@ function ProjectSingle(props) {
       {/* Header */}
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, delay: 1 }} exit={{ opacity: 0 }}>
         <div>
-          <p className='font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-light mt-14 sm:mt-20 mb-7'>
+          <p className='font-general-medium text-left text-3xl sm:text-4xl font-bold text-jefferson-dark dark:text-primary-light mt-14 sm:mt-20 mb-7'>
             {props.project.ProjectHeader.title}
           </p>
           <div className='flex'>
             <div className='flex items-center mr-10'>
-              <FiClock className='text-xl text-ternary-light' />
-              <span className='font-general-regular ml-2 leading-none text-primary-light'>
+              <FiClock className='text-xl text-jefferson-dark dark:text-ternary-light' />
+              <span className='font-general-regular ml-2 leading-none text-jefferson-dark dark:text-primary-light'>
                 {props.project.ProjectHeader.publishDate}
               </span>
             </div>
             <div className='flex items-center'>
-              <FiTag className='w-4 h-4 text-ternary-light' />
-              <span className='font-general-regular ml-2 leading-none text-primary-light'>
+              <FiTag className='w-4 h-4 text-jefferson-dark dark:text-ternary-light' />
+              <span className='font-general-regular ml-2 leading-none text-jefferson-dark dark:text-primary-light'>
                 {props.project.ProjectHeader.tags}
               </span>
             </div>
@@ -56,20 +56,23 @@ function ProjectSingle(props) {
           <div className='w-full sm:w-1/3 text-left'>
             {/* Single project client details */}
             <div className='mb-7'>
-              <p className='font-general-regular text-3xl font-semibold text-secondary-light mb-2'>
+              <p className='font-general-regular text-3xl font-semibold text-jefferson-dark dark:text-secondary-light mb-2'>
                 {props.project.ProjectInfo.ProjectHeading}
               </p>
               <ul className='leading-loose text-xl'>
                 {props.project.ProjectInfo.ProjectAboutInfo.map((info) => {
                   return (
-                    <li className='font-general-regular text-ternary-light ' key={info.id}>
+                    <li
+                      className='font-general-medium text-jefferson-dark dark:text-ternary-light '
+                      key={info.id}
+                    >
                       <span>{info.title}: </span>
                       <a
                         href={info.url}
                         target='a_blank'
                         className={
                           info.title === 'Website' || info.title === 'Github'
-                            ? 'text-jefferson-main decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-light cursor-pointer duration-300'
+                            ? 'text-jefferson-maindark dark:text-jefferson-main decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-dark hover:dark:text-jefferson-light cursor-pointer duration-300'
                             : ''
                         }
                         aria-label='Project Website '
@@ -84,10 +87,10 @@ function ProjectSingle(props) {
 
             {/* Single project objectives */}
             <div className='mb-7'>
-              <p className='font-general-regular text-3xl font-semibold text-ternary-light mb-2'>
+              <p className='font-general-regular text-3xl font-semibold text-jefferson-dark dark:text-ternary-light mb-2'>
                 {props.project.ProjectInfo.FeatureHeading}
               </p>
-              <div className='font-general-regular text-ternary-light'>
+              <div className='font-general-medium text-jefferson-dark dark:text-ternary-light'>
                 <ul className='list-disc text-xl'>
                   {props.project.ProjectInfo.FeatureDetails.map((details) => {
                     return <li key={details.id}>・{details.details}</li>
@@ -98,20 +101,23 @@ function ProjectSingle(props) {
 
             {/* Single project technologies */}
             <div className='mb-7'>
-              <p className='font-general-regular text-3xl font-semibold text-ternary-light mb-2'>
+              <p className='font-general-regular text-3xl font-semibold text-jefferson-dark dark:text-ternary-light mb-2'>
                 {props.project.ProjectInfo.TechnologiesTitle}
               </p>
 
               <ul className='list-disc text-xl'>
                 {props.project.ProjectInfo.TechnologiesDetails.map((Details) => {
                   return (
-                    <li className='font-general-regular text-ternary-light ' key={Details.id}>
+                    <li
+                      className='font-general-medium text-jefferson-dark dark:text-ternary-light '
+                      key={Details.id}
+                    >
                       <span>・{Details.title}</span>
                       <a
                         href={Details.url}
                         target='a_blank'
                         className={
-                          'text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-main cursor-pointer duration-300'
+                          'text-jefferson-maindark dark:text-jefferson-main decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-dark hover:dark:text-jefferson-light cursor-pointer duration-300'
                         }
                         aria-label='Inspiration Website '
                       >
@@ -133,20 +139,23 @@ function ProjectSingle(props) {
             </div>
 
             <div className='mb-7'>
-              <p className='font-general-regular text-3xl font-semibold text-ternary-light mb-2'>
+              <p className='font-general-regular text-3xl font-semibold text-jefferson-dark dark:text-ternary-light mb-2'>
                 {props.project.ProjectInfo.InspirationHeading}
               </p>
-              <div className='font-general-regular text-ternary-light'>
+              <div className='font-general-regular text-jefferson-dark dark:text-ternary-light'>
                 <ul className='list-disc text-xl'>
                   {props.project.ProjectInfo.InspirationDetails.map((Details) => {
                     return (
-                      <li className='font-general-regular text-ternary-light ' key={Details.id}>
+                      <li
+                        className='font-general-medium text-jefferson-dark dark:text-ternary-light '
+                        key={Details.id}
+                      >
                         <span>・{Details.title}</span>
                         <a
                           href={Details.url}
                           target='a_blank'
                           className={
-                            'text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-main cursor-pointer duration-300'
+                            'text-jefferson-maindark dark:text-jefferson-main decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-dark hover:dark:text-jefferson-light cursor-pointer duration-300'
                           }
                           aria-label='Inspiration Website '
                         >
@@ -179,27 +188,27 @@ function ProjectSingle(props) {
                 )
               })}
             </div>
-            <p className='text-primary-light text-3xl font-bold mb-7'>
+            <p className='text-jefferson-dark dark:text-primary-light text-3xl font-bold mb-7'>
               {props.project.ProjectInfo.ProjectDetailsHeading}
             </p>
             {props.project.ProjectInfo.ProjectDetails.map((details) => {
               return (
                 <p
                   key={details.id}
-                  className='font-general-regular mb-5 text-xl text-ternary-light'
+                  className='font-general-regular mb-5 text-xl text-jefferson-dark dark:text-ternary-light'
                 >
                   {details.details}
                 </p>
               )
             })}
-            <p className='text-primary-light text-3xl font-bold mb-7'>
+            <p className='text-jefferson-dark dark:text-primary-light text-3xl font-bold mb-7'>
               {props.project.ProjectInfo.ProjectSecondDetailsHeading}
             </p>
             {props.project.ProjectInfo.ProjectSecondDetails.map((details) => {
               return (
                 <p
                   key={details.id}
-                  className='font-general-regular mb-5 text-xl text-ternary-light'
+                  className='font-general-regular mb-5 text-xl text-jefferson-dark dark:text-ternary-light'
                 >
                   {details.details}
                 </p>

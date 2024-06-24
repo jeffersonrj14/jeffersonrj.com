@@ -14,8 +14,12 @@ function ProjectsFilter({ setSelectProject }) {
                 text-sm
                 sm:text-md
                 font-medium
-                bg-jefferson-dark
-                text-jefferson-light
+                border-jefferson-dark
+                dark:border-jefferson-light
+                bg-jefferson-light
+                dark:bg-jefferson-dark
+                text-jefferson-dark
+                dark:text-jefferson-light
                 border
             '
     >

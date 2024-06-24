@@ -10,7 +10,7 @@ import { IoMail, IoLogoDiscord, IoDocumentText } from 'react-icons/io5'
 function SocialLink({ icon: Icon, ...props }) {
   return (
     <Link className='-m-1 p-1 ' {...props}>
-      <Icon className='h-6 w-6 cursor-pointer fill-gray-500 transition hover:fill-jefferson-main' />
+      <Icon className='h-6 w-6 cursor-pointer fill-gray-500 transition hover:fill-jefferson-maindark hover:dark:fill-jefferson-main' />
     </Link>
   )
 }
@@ -78,7 +78,11 @@ const CurrentTime = () => {
     hour12: false
   }).format(currentTime)
 
-  return <p className='mt-2 tabular-nums tracking-tight inline'>{formattedTime} GMT+7</p>
+  return (
+    <p className='mt-2 tabular-nums tracking-tight inline text-jefferson-dark dark:text-jefferson-light'>
+      {formattedTime} GMT+7
+    </p>
+  )
 }
 
 const Available = () => {
@@ -122,14 +126,14 @@ function Hero() {
         }}
       >
         <div className='pt-5 mb-5 max-w-2xl'>
-          <h1 className='text-4xl font-bold tracking-tight sm:text-5xl'>
+          <h1 className='text-4xl font-bold tracking-tight sm:text-5xl text-jefferson-dark dark:text-jefferson-light'>
             Hi, I&apos;m RJ Jefferson
           </h1>
-          <h3 className='ml-0.5 text-xl font-medium tracking-tight sm:text-2xl'>
+          <h3 className='ml-0.5 text-xl font-medium tracking-tight sm:text-2xl text-jefferson-dark dark:text-jefferson-light'>
             Self-Taught Developer
           </h3>
 
-          <p className='mt-6 text-lg text-gray-300'>
+          <p className='mt-6 text-lg text-gray-700 dark:text-gray-300'>
             As an independent student, I learn every day (4 days a week) to improve my skills.
             Recently, I started learning DSA (Data Structures and Algorithms) and practicing
             problem-solving on LeetCode. I am committed to solving 1 to 3 questions each week,
@@ -173,12 +177,12 @@ function Hero() {
             <SocialLink href='/resume.pdf' aria-label='Check out my Resume' icon={IoDocumentText} />
           </div>
 
-          <div className='pt-5 text-lg '>
+          <div className='pt-5 text-lg text-jefferson-dark dark:text-jefferson-light'>
             Indonesia • <CurrentTime />
             <Available />
           </div>
 
-          <div className='pt-2 pb-5 relative'>
+          <div className='pt-2 pb-5 relative text-jefferson-dark dark:text-jefferson-light'>
             <div className='absolute left-0'>
               <NowPlaying />
             </div>

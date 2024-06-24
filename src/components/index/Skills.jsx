@@ -67,10 +67,10 @@ function Skills() {
   return (
     <>
       <section className='pt-5'>
-        <span className='font-general-medium font-bold text-2xl sm:text-4xl mb-1 text-jefferson-light'>
+        <span className='font-general-medium font-bold text-2xl sm:text-4xl mb-1 text-jefferson-dark dark:text-jefferson-light'>
           Skills
         </span>
-        <hr className='h-px my-2 border-0 bg-jefferson-light rounded-full' />
+        <hr className='h-px my-2 border-0 bg-jefferson-dark dark:bg-jefferson-light rounded-full ' />
         <motion.div
           initial='hidden'
           whileInView='visible'
@@ -86,12 +86,12 @@ function Skills() {
                 key={skill.name}
                 onMouseMove={(e) => showHoverAnimation(e)}
                 onMouseLeave={(e) => removeHoverAnimation(e)}
-                className='bg-jefferson-dark group flex origin-center transform items-center justify-center gap-4 rounded-sm border p-4 border-jefferson-light hover:bg-darkSecondary sm:justify-start md:origin-top'
+                className='bg-white/80 dark:bg-jefferson-dark group flex origin-center transform items-center justify-center gap-4 rounded-sm border p-4 border-jefferson-dark dark:border-jefferson-light sm:justify-start md:origin-top'
               >
-                <div className='pointer-events-none relative select-none transition group-hover:scale-110 sm:group-hover:scale-100'>
+                <div className='text-jefferson-dark dark:text-jefferson-light pointer-events-none relative select-none transition group-hover:scale-110 sm:group-hover:scale-100'>
                   <skill.logo className='h-8 w-8' />
                 </div>
-                <p className='pointer-events-none hidden select-none text-sm font-semibold sm:inline-flex md:text-base'>
+                <p className='text-jefferson-dark dark:text-jefferson-light pointer-events-none hidden select-none text-sm font-semibold sm:inline-flex md:text-base'>
                   {skill.name}
                 </p>
               </motion.div>
