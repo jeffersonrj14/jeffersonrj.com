@@ -2,15 +2,16 @@ import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 
 function PagesMetaHead({
-  title = 'Ritch Johan Jefferson - Front-end developer',
+  title = 'RJ Jefferson ー Front End Developer`',
   keywords = 'next.js',
-  description = 'Ritch Johan Jefferson - Portfolio Website',
+  description = 'A Self Taught Developer and loves to learn by building projects.',
   icon = '/author2.png'
 }) {
+  const pageTitle = `${title} | RJ Jefferson ー Front End Developer`
   return (
     <>
       <NextSeo
-        title={title}
+        title={pageTitle}
         description={description}
         keywords={keywords}
         openGraph={{

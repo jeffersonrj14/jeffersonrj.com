@@ -2,19 +2,25 @@ import Image from 'next/image'
 import { v4 as uuidv4 } from 'uuid'
 
 const RelatedProject = {
-  title: 'Related Projects',
+  title: 'Other Projects',
   Projects: [
     {
       id: uuidv4(),
       title: 'Portfolio',
-      img: '/images/projects/portfolio/1.png',
+      img: '/images/projects/portfolio/portfolio-img.webp',
       href: '/projects/1'
     },
     {
       id: uuidv4(),
       title: 'Projects',
-      img: '/images/projects/utils/logo.png',
+      img: '/images/projects/utils/hi.webp',
       href: '/projects/2'
+    },
+    {
+      id: uuidv4(),
+      title: 'Projects',
+      img: '/images/projects/react-projects/image.webp',
+      href: '/projects/3'
     }
   ]
 }

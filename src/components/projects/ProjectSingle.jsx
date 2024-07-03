@@ -1,10 +1,15 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import { FaGithub } from 'react-icons/fa'
+import { FiExternalLink } from 'react-icons/fi'
 
 const imageStyle = { maxWidth: '100%', height: 'auto' }
 
-const ProjectSingle = (props) => {
+function ProjectSingle(props) {
+  const handleIconClick = (e) => {
+    e.stopPropagation()
+  }
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -34,6 +39,26 @@ const ProjectSingle = (props) => {
             <span className='text-lg text-jefferson-dark dark:text-jefferson-light'>
               {props.category}
             </span>
+            <div className='flex flex-row justify-between text-2xl gap-x-2 '>
+              <a
+                href={props.githubrepo}
+                passHref
+                className='text-gray-400 dark:text-slate-500 hover:text-[#212121] dark:hover:text-slate-200 transition select-none'
+                onClick={handleIconClick}
+                target='_blank'
+              >
+                <FaGithub />
+              </a>
+              <a
+                href={props.livepreview}
+                passHref
+                className='text-gray-400 dark:text-slate-500 hover:text-[#212121] dark:hover:text-slate-200 transition select-none'
+                onClick={handleIconClick}
+                target='_blank'
+              >
+                <FiExternalLink />
+              </a>
+            </div>
           </div>
         </div>
       </Link>

@@ -3,29 +3,24 @@ import { v4 as uuidv4 } from 'uuid'
 export const projectsData = [
   {
     id: 1,
-    title: 'Next.js Portfolio',
+    title: 'Personal Website',
     url: 'https://jeffersonrj.com',
+    githubrepo: 'https://github.com/jeffersonrj14/jeffersonrj.com',
+    livepreview: 'https://jeffersonrj.com',
     category: 'Portfolio',
-    img: '/images/projects/portfolio/1.png',
+    img: '/images/projects/portfolio/portfolio-img.webp',
     ProjectHeader: {
-      title: 'Next.js Portfolio',
+      title: 'Personal Website',
       publishDate: 'Mar 14, 2024',
-      tags: 'Portfolio'
+      tags: 'Portfolio, Personal Website'
     },
-    ProjectImages: [
-      {
-        id: uuidv4(),
-        title: 'Next.js Portfolio',
-        img: '/images/projects/portfolio/portfolio-img.png'
-      }
-    ],
     ProjectInfo: {
       ProjectHeading: 'About Project',
       ProjectAboutInfo: [
         {
           id: uuidv4(),
           title: 'Name',
-          details: 'Next.js Portfolio'
+          details: 'Personal Website'
         },
         {
           id: uuidv4(),
@@ -114,12 +109,25 @@ export const projectsData = [
         {
           id: uuidv4(),
           details:
-            'You might think that I do not encounter any difficulties when making these changes, but I do face challenges, particularly when integrating the Spotify currently playing feature. It often throws errors, but after learning from the Spotify developer docs and other developer blogs and posts from dev.to, I finally managed to implement it.'
+            'I do face challenges, particularly when integrating the Spotify currently playing feature. It often throws errors, but after learning from the Spotify developer docs and other developer blogs and posts from dev.to, I finally managed to implement it.'
         },
         {
           id: uuidv4(),
           details:
             'I also encountered many problems when it came to using next-seo. I wanted the title to change every time I navigated to a new page. Initially, I was stuck and unsure of what to do, but I eventually managed to fix it, and now it works fine.'
+        }
+      ],
+      ContinuedDevelopmentHeading: 'Continued Development',
+      ContinuedDevelopment: [
+        {
+          id: uuidv4(),
+          details:
+            'I will continue to develop this site and follow up on each package update that I use in this project. I will also come up with new features whenever I have the idea.'
+        },
+        {
+          id: uuidv4(),
+          details:
+            'For the time being, I will stick to JSX. I have been planning to use TypeScript (TS) as well.'
         }
       ]
     }
@@ -131,20 +139,15 @@ export const projectsData = [
     id: 2,
     title: 'Utilities',
     url: 'https://hi.jeffersonrj.com',
+    githubrepo: 'https://github.com/jeffersonrj14/hi.jeffersonrj.com',
+    livepreview: 'https://hi.jeffersonrj.com',
     category: 'Projects',
-    img: '/images/projects/utils/logo.png',
+    img: '/images/projects/utils/hi.webp',
     ProjectHeader: {
       title: 'Utilities',
       publishDate: 'June 9, 2024',
-      tags: 'Projects'
+      tags: 'Utilities, blog'
     },
-    ProjectImages: [
-      {
-        id: uuidv4(),
-        title: 'Utilities',
-        img: '/images/projects/utils/hi.png'
-      }
-    ],
     ProjectInfo: {
       ProjectHeading: 'About Project',
       ProjectAboutInfo: [
@@ -248,6 +251,144 @@ export const projectsData = [
           id: uuidv4(),
           details:
             'Creating a blog with Markdown came with its own set of challenges. When I originally started using Markdown for my blog entries, I didn’t understand why the styles weren’t applying correctly. I did some research and found that in order to render Markdown, I needed to add custom CSS. To solve this, I created a post.css file in the styles directory specifically for styling Markdown content.'
+        }
+      ],
+      ContinuedDevelopmentHeading: 'Continued Development',
+      ContinuedDevelopment: [
+        {
+          id: uuidv4(),
+          details:
+            'I will only update this page whenever I come up with a new idea to add new utilities. Regarding the blog, I have created it on this site but do not plan to update it daily, weekly, or monthly. However, I will add new blog posts later when I have something to write about.'
+        }
+      ]
+    }
+  },
+  // =======================================================
+  // =======================================================
+  // =======================================================
+  {
+    id: 3,
+    title: 'React Projects',
+    url: 'https://projects.jeffersonrj.com',
+    githubrepo: 'https://github.com/jeffersonrj14/react-projects',
+    livepreview: 'https://projects.jeffersonrj.com',
+    category: 'Projects',
+    img: '/images/projects/react-projects/image.webp',
+    ProjectHeader: {
+      title: 'React Projects',
+      publishDate: 'June 13, 2024',
+      tags: 'Practice, Exercise'
+    },
+    ProjectInfo: {
+      ProjectHeading: 'About Project',
+      ProjectAboutInfo: [
+        {
+          id: uuidv4(),
+          title: 'Name',
+          details: 'React Projects'
+        },
+        {
+          id: uuidv4(),
+          title: 'Github',
+          details: 'Github Code',
+          url: 'https://github.com/jeffersonrj14/react-projects'
+        },
+        {
+          id: uuidv4(),
+          title: 'Website',
+          details: 'Click here for Live Preview',
+          url: 'https://projects.jeffersonrj.com'
+        }
+      ],
+      FeatureHeading: 'Project List',
+      FeatureDetails: [
+        {
+          id: uuidv4(),
+          details: 'Personal Project'
+        },
+        {
+          id: uuidv4(),
+          details: 'Games'
+        },
+        {
+          id: uuidv4(),
+          details: 'Frontend Mentor Solution'
+        }
+      ],
+
+      TechnologiesTitle: 'Tools & Technologies',
+      TechnologiesDetails: [
+        {
+          id: uuidv4(),
+          details: 'Vite',
+          url: 'https://vitejs.dev/'
+        },
+        {
+          id: uuidv4(),
+          details: 'React',
+          url: 'https://react.dev/'
+        },
+        {
+          id: uuidv4(),
+          details: 'TypeScript',
+          url: 'https://www.typescriptlang.org/'
+        },
+        {
+          id: uuidv4(),
+          details: 'Tailwind CSS',
+          url: 'https://tailwindcss.com/'
+        },
+        {
+          id: uuidv4(),
+          details: 'Custom CSS',
+          url: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
+        },
+        {
+          id: uuidv4(),
+          details: 'Vercel',
+          url: 'https://vercel.com/'
+        }
+      ],
+      InspirationHeading: 'Documentation',
+      InspirationDetails: [
+        {
+          id: uuidv4(),
+          details: 'How to Use React Helmet',
+          url: 'https://www.freecodecamp.org/news/react-helmet-examples/'
+        },
+        {
+          id: uuidv4(),
+          details: 'React Router',
+          url: 'https://reactrouter.com/en/main'
+        },
+        {
+          id: uuidv4(),
+          details: 'Learning by creating projects',
+          url: 'https://medium.com/geekculture/why-should-you-start-working-on-projects-27bb91c0e906'
+        }
+      ],
+      ProjectDetailsHeading: 'Main Goal',
+      ProjectDetails: [
+        {
+          id: uuidv4(),
+          details:
+            'I am creating these React projects as part of my practice and gaining experience in project building. Many problems arise, perhaps due to missing expressions or brackets.'
+        }
+      ],
+      ProjectSecondDetailsHeading: 'My Difficulty',
+      ProjectSecondDetails: [
+        {
+          id: uuidv4(),
+          details:
+            'In TypeScript is that I need to define variables, specifying whether they are strings, numbers, booleans, void, etc. However, TypeScript helps by identifying errors before deployment.'
+        }
+      ],
+      ContinuedDevelopmentHeading: 'Continued Development',
+      ContinuedDevelopment: [
+        {
+          id: uuidv4(),
+          details:
+            'As mentioned before, this is part of my exercise/practice. I will code daily but may not push to GitHub daily—perhaps every two weeks or longer intervals.'
         }
       ]
     }

@@ -135,9 +135,8 @@ function Hero() {
 
           <p className='mt-6 text-lg text-gray-700 dark:text-gray-300'>
             As an independent student, I learn every day (4 days a week) to improve my skills.
-            Recently, I started learning DSA (Data Structures and Algorithms) and practicing
-            problem-solving on LeetCode. I am committed to solving 1 to 3 questions each week,
-            starting with the easy ones, to improve my problem-solving skills.
+            Currently, I am studying CS50x and DSA (Data Structures and Algorithms). I learn best by
+            building projects, which has helped me rapidly develop my capabilities.
           </p>
           <div className='mt-6 flex gap-6'>
             <SocialLink
@@ -154,13 +153,13 @@ function Hero() {
               target='_blank'
               rel='me'
             />
-            <SocialLink
+            {/* <SocialLink
               href='https://leetcode.com/u/jeffersonrj14/'
               aria-label='My LeetCode Activity'
               icon={SiLeetcode}
               target='_blank'
               rel='me'
-            />
+            /> */}
             <SocialLink
               href='https://github.com/jeffersonrj14'
               aria-label='Check out my Github'

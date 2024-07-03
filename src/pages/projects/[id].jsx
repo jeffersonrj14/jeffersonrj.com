@@ -63,7 +63,7 @@ function ProjectSingle(props) {
                 {props.project.ProjectInfo.ProjectAboutInfo.map((info) => {
                   return (
                     <li
-                      className='font-general-medium text-jefferson-dark dark:text-ternary-light '
+                      className='font-general-medium text-jefferson-dark dark:text-white/80 '
                       key={info.id}
                     >
                       <span>{info.title}: </span>
@@ -90,7 +90,7 @@ function ProjectSingle(props) {
               <p className='font-general-regular text-3xl font-semibold text-jefferson-dark dark:text-ternary-light mb-2'>
                 {props.project.ProjectInfo.FeatureHeading}
               </p>
-              <div className='font-general-medium text-jefferson-dark dark:text-ternary-light'>
+              <div className='font-general-medium text-jefferson-dark dark:text-white/80'>
                 <ul className='list-disc text-xl'>
                   {props.project.ProjectInfo.FeatureDetails.map((details) => {
                     return <li key={details.id}>・{details.details}</li>
@@ -171,7 +171,7 @@ function ProjectSingle(props) {
 
           {/*  Single project right section details */}
           <div className='w-full sm:w-2/3 text-left mt-10 sm:mt-0'>
-            <div className='grid grid-cols-1 sm:grid-cols-1 sm:gap-10 mb-6'>
+            {/* <div className='grid grid-cols-1 sm:grid-cols-1 sm:gap-10 mb-6'>
               {props.project.ProjectImages.map((project) => {
                 return (
                   <div className='mb-10 sm:mb-0 border' key={project.id}>
@@ -187,28 +187,41 @@ function ProjectSingle(props) {
                   </div>
                 )
               })}
-            </div>
-            <p className='text-jefferson-dark dark:text-primary-light text-3xl font-bold mb-7'>
+            </div> */}
+            <p className='text-jefferson-dark dark:text-white/80 text-3xl font-bold mb-7'>
               {props.project.ProjectInfo.ProjectDetailsHeading}
             </p>
             {props.project.ProjectInfo.ProjectDetails.map((details) => {
               return (
                 <p
                   key={details.id}
-                  className='font-general-regular mb-5 text-xl text-jefferson-dark dark:text-ternary-light'
+                  className='font-general-regular mb-5 text-xl text-jefferson-dark dark:text-white/80'
                 >
                   {details.details}
                 </p>
               )
             })}
-            <p className='text-jefferson-dark dark:text-primary-light text-3xl font-bold mb-7'>
+            <p className='text-jefferson-dark dark:text-white/80 text-3xl font-bold mb-7'>
               {props.project.ProjectInfo.ProjectSecondDetailsHeading}
             </p>
             {props.project.ProjectInfo.ProjectSecondDetails.map((details) => {
               return (
                 <p
                   key={details.id}
-                  className='font-general-regular mb-5 text-xl text-jefferson-dark dark:text-ternary-light'
+                  className='font-general-regular mb-5 text-xl text-jefferson-dark dark:text-white/80'
+                >
+                  {details.details}
+                </p>
+              )
+            })}
+            <p className='text-jefferson-dark dark:text-white/80 text-3xl font-bold mb-7'>
+              {props.project.ProjectInfo.ContinuedDevelopmentHeading}
+            </p>
+            {props.project.ProjectInfo.ContinuedDevelopment.map((details) => {
+              return (
+                <p
+                  key={details.id}
+                  className='font-general-regular mb-5 text-xl text-jefferson-dark dark:text-white/80'
                 >
                   {details.details}
                 </p>

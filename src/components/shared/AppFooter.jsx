@@ -56,6 +56,12 @@ const MyLinks = ({ href, text, rel, target }) => {
 }
 
 const AboutMe = () => {
+  const calculateAge = () => {
+    const birthDate = new Date('2001-03-14')
+    const currentDate = new Date()
+    const age = currentDate.getFullYear() - birthDate.getFullYear()
+    return age
+  }
   return (
     <div className='my-4 grid grid-cols-2 sm:grid-cols-2  '>
       <div>
@@ -68,7 +74,7 @@ const AboutMe = () => {
           </span>
           <br />
           <span className='my-2 font-medium tracking-tight text-jefferson-dark dark:text-jefferson-light decoration-wavy decoration-2 underline-offset-4 transition-all text-xl hover:underline hover:text-jefferson-maindark hover:dark:text-jefferson-main'>
-            23 y/o | he/him
+            {calculateAge()} y/o | he/him
           </span>
         </ul>
       </div>
@@ -84,7 +90,6 @@ const AboutMe = () => {
             text='Email'
             email='jefferson@jeffersonrj.com'
           />
-          {/* <MyLinks href='https://www.linkedin.com/in/jeffersonrj14' text='Linkedin' rel='me'/> */}
         </ul>
       </div>
     </div>
@@ -103,15 +108,16 @@ const AboutMe2 = () => {
       </div>
       <div>
         <ul className='font-medium tracking-tight text-slate-200'>
+          <MyLinks href='https://links.jeffersonrj.com' text='Links' rel='me' target='a_blank' />
           <MyLinks
-            href='https://github.com/jeffersonrj14'
-            text='GitHub'
+            href='https://hi.jeffersonrj.com'
+            text='Utils & Blog'
             rel='me'
             target='a_blank'
           />
           <MyLinks
-            href='https://leetcode.com/u/jeffersonrj14/'
-            text='LeetCode'
+            href='https://projects.jeffersonrj.com'
+            text='React Projects'
             rel='me'
             target='a_blank'
           />
@@ -119,6 +125,12 @@ const AboutMe2 = () => {
       </div>
       <div>
         <ul className='font-medium tracking-tight text-slate-200'>
+          <MyLinks
+            href='https://github.com/jeffersonrj14'
+            text='GitHub'
+            rel='me'
+            target='a_blank'
+          />
           <MyLinks
             href='https://discordapp.com/users/606481557615542273'
             text='Discord'
@@ -191,7 +203,6 @@ function AppFooter() {
         <div className='mt-2 flex w-full flex-col text-center '>
           <AboutFooter />
         </div>
-        {/* <AppFooterCopyright /> */}
         <hr className=' mx-auto border-t-2 border-primary-dark dark:border-primary-light  rounded-2xl' />
         <div className='grid grid-cols-1 md:grid-cols-2'>
           <div className='my-4 text-center font-normal text-jefferson-dark dark:text-jefferson-light md:text-left '>
