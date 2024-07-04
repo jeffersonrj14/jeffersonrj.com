@@ -2,12 +2,12 @@ import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 
 function PagesMetaHead({
-  title = 'RJ Jefferson ー Front End Developer`',
+  title = 'RJ Jefferson ー Self Taught Developer`',
   keywords = 'next.js',
   description = 'A Self Taught Developer and loves to learn by building projects.',
   icon = '/author2.png'
 }) {
-  const pageTitle = `${title} | RJ Jefferson ー Front End Developer`
+  const pageTitle = `${title} | RJ Jefferson ー Self Taught Developer`
   return (
     <>
       <NextSeo
