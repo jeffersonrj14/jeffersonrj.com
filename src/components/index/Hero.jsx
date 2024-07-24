@@ -132,7 +132,9 @@ function Hero({ hero }) {
             {hero.intro.role}
           </h3>
 
-          <p className='mt-6 text-lg font-medium text-gray-700 dark:text-gray-300'>{hero.intro.summary}</p>
+          <p className='mt-6 text-lg font-medium text-gray-700 dark:text-gray-300'>
+            {hero.intro.summary}
+          </p>
           <div className='mt-6 flex gap-6'>
             {hero.link.social.map((socialLink) => (
               <SocialLink
