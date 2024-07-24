@@ -6,8 +6,8 @@ function AboutMeBio() {
       <section className='mt-16 w-full p-4'>
         <div className='relative mb-12 h-12 w-56 mx-auto'>
           <Image
-            src='/profile.png'
-            alt='Jefferson Profile Picture'
+            src='/author2.png'
+            alt='Profile Picture'
             className='rounded-full'
             width={500}
             height={500}

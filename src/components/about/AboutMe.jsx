@@ -22,13 +22,11 @@ function AboutMe() {
         Indonesia
       </p>
 
-      <p className='mt-4 text-xl font-medium leading-8 tracking-tight '>
-        I am currently studying{' '}
-        <InlineLink href='https://pll.harvard.edu/course/cs50-introduction-computer-science'>
-          CS50
-        </InlineLink>
-        . and taking online courses on{' '}
-        <InlineLink href='https://zerotomastery.io'>Zero To Mastery</InlineLink>.
+      <p className='mt-4 text-xl font-medium leading-8 tracking-tight'>
+        I learn independently through various resources (
+        <InlineLink href='https://www.youtube.com/c/Freecodecamp'>FreeCodeCamp Youtube</InlineLink>,{' '}
+        <InlineLink href='https://www.theodinproject.com/'>The Odin Project</InlineLink>,{' '}
+        <InlineLink href='https://www.khanacademy.org/computing'>Khan Academy</InlineLink>, etc).
       </p>
 
       <p className='mt-4 text-xl font-medium leading-8 tracking-tight'>

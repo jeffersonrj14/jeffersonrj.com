@@ -222,7 +222,7 @@ function AppFooter() {
             </Link>
           </div>
           <div className='my-4 text-center font-normal text-jefferson-dark dark:text-jefferson-light md:text-right'>
-            &copy; {new Date().getFullYear()} Created using Next.js & Tailwind CSS{' '}
+            &copy; {new Date().getFullYear()} Created using Next.js{' '}
           </div>
         </div>
       </div>

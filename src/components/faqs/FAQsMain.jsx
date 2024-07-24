@@ -225,37 +225,6 @@ function FAQs() {
                   <summary className='flex text-left justify-between font-medium cursor-pointer list-none'>
                     <span className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-maindark hover:dark:text-jefferson-main'>
                       {' '}
-                      Do you like building projects?
-                    </span>
-                    <span className='transition group-open:rotate-180'>
-                      <svg
-                        fill='none'
-                        height='24'
-                        shapeRendering='geometricPrecision'
-                        stroke='currentColor'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth='1.5'
-                        viewBox='0 0 24 24'
-                        width='24'
-                      >
-                        <path d='M6 9l6 6 6-6'></path>
-                      </svg>
-                    </span>
-                  </summary>
-                  <p className='mt-3'>
-                    It&apos;s not that I dislike building projects. Rather, I prefer not to create
-                    small projects repeatedly without any improvement. That&apos;s why I focus on
-                    projects that I feel I can continue to develop.
-                  </p>
-                </details>
-              </div>
-              {/*  */}
-              <div className='py-5'>
-                <details>
-                  <summary className='flex text-left justify-between font-medium cursor-pointer list-none'>
-                    <span className='decoration-wavy decoration-2 underline-offset-4 transition-all hover:underline hover:text-jefferson-maindark hover:dark:text-jefferson-main'>
-                      {' '}
                       Are you open to job opportunities?
                     </span>
                     <span className='transition group-open:rotate-180'>

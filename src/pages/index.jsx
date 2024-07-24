@@ -4,13 +4,14 @@ import ProjectsGrid from '@/components/projects/ProjectsGrid'
 import Button from '@/components/reusable/Button'
 import Hero from '@/components/index/Hero'
 import Skills from '@/components/index/Skills'
+import { heroData } from '@/data/heroData'
 
 export default function Home() {
   return (
     <div className='container mx-auto text-jefferson-light'>
       <PagesMetaHead title='Home' />
 
-      <Hero />
+      <Hero hero={heroData[0]} />
       <Skills />
       <ProjectsGrid />
 

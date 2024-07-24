@@ -1,11 +1,10 @@
 import { motion } from 'framer-motion'
 import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
-import { SiGithub, SiTwitter, SiLeetcode } from 'react-icons/si'
 import NowPlaying from '@/components/Spotify/NowPlaying'
 import toast from 'react-hot-toast'
-
-import { IoMail, IoLogoDiscord, IoDocumentText } from 'react-icons/io5'
+import { IoMail } from 'react-icons/io5'
+import { heroData } from '@/data/heroData'
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
@@ -113,7 +112,7 @@ const Available = () => {
   )
 }
 
-function Hero() {
+function Hero({ hero }) {
   return (
     <>
       <motion.div
@@ -127,56 +126,33 @@ function Hero() {
       >
         <div className='pt-5 mb-5 max-w-2xl'>
           <h1 className='text-4xl font-bold tracking-tight sm:text-5xl text-jefferson-dark dark:text-jefferson-light'>
-            Hi, I&apos;m RJ Jefferson
+            Hi, I&apos;m&nbsp;{hero.intro.name}
           </h1>
           <h3 className='ml-0.5 text-xl font-medium tracking-tight sm:text-2xl text-jefferson-dark dark:text-jefferson-light'>
-            Self-Taught Developer
+            {hero.intro.role}
           </h3>
 
-          <p className='mt-6 text-lg text-gray-700 dark:text-gray-300'>
-            As an independent student, I learn every day (4 days a week) to improve my skills.
-            Currently, I am studying CS50x and DSA (Data Structures and Algorithms). I learn best by
-            building projects, which has helped me rapidly develop my capabilities.
-          </p>
+          <p className='mt-6 text-lg font-medium text-gray-700 dark:text-gray-300'>{hero.intro.summary}</p>
           <div className='mt-6 flex gap-6'>
-            <SocialLink
-              href='https://discordapp.com/users/606481557615542273'
-              aria-label='Check out my Discord'
-              icon={IoLogoDiscord}
-              target='_blank'
-              rel='me'
-            />
-            <SocialLink
-              href='https://twitter.com/jeffersonrj14'
-              aria-label='Check out my Twitter'
-              icon={SiTwitter}
-              target='_blank'
-              rel='me'
-            />
-            {/* <SocialLink
-              href='https://leetcode.com/u/jeffersonrj14/'
-              aria-label='My LeetCode Activity'
-              icon={SiLeetcode}
-              target='_blank'
-              rel='me'
-            /> */}
-            <SocialLink
-              href='https://github.com/jeffersonrj14'
-              aria-label='Check out my Github'
-              icon={SiGithub}
-              target='_blank'
-              rel='me'
-            />
+            {hero.link.social.map((socialLink) => (
+              <SocialLink
+                key={socialLink.id}
+                href={socialLink.url}
+                aria-label={socialLink.label}
+                icon={socialLink.icon}
+                target={socialLink.target}
+                rel={socialLink.rel}
+              />
+            ))}
             <CopyEmail
               href='mailto:jefferson@jeffersonrj.com'
               aria-label='Send me an email'
               email='jefferson@jeffersonrj.com'
               icon={IoMail}
             />
-            <SocialLink href='/resume.pdf' aria-label='Check out my Resume' icon={IoDocumentText} />
           </div>
 
-          <div className='pt-5 text-lg text-jefferson-dark dark:text-jefferson-light'>
+          <div className='pt-5 text-lg font-medium text-jefferson-dark dark:text-jefferson-light'>
             Indonesia • <CurrentTime />
             <Available />
           </div>
