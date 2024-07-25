@@ -81,7 +81,7 @@ const AboutMe = () => {
 
       <div>
         <h2 className='font-header uppercase tracking-tight text-2xl font-extrabold  text-jefferson-dark dark:text-jefferson-light'>
-          Contact Me
+          Contact
         </h2>
 
         <ul className='font-medium tracking-tight text-slate-200'>
@@ -98,29 +98,12 @@ const AboutMe = () => {
 
 const AboutMe2 = () => {
   return (
-    <div className='my-4 grid grid-cols-3 sm:grid-cols-3'>
+    <div className='my-4 grid grid-cols-2 sm:grid-cols-2'>
       <div>
         <ul className='font-medium tracking-tight text-slate-200'>
           <MyLinks href='/about' text='About' target='_self' />
           <MyLinks href='/projects' text='Projects' target='_self' />
           <MyLinks href='/faqs' text='FAQ' target='_self' />
-        </ul>
-      </div>
-      <div>
-        <ul className='font-medium tracking-tight text-slate-200'>
-          <MyLinks href='https://links.jeffersonrj.com' text='Links' rel='me' target='a_blank' />
-          <MyLinks
-            href='https://hi.jeffersonrj.com'
-            text='Utils & Blog'
-            rel='me'
-            target='a_blank'
-          />
-          <MyLinks
-            href='https://projects.jeffersonrj.com'
-            text='React Projects'
-            rel='me'
-            target='a_blank'
-          />
         </ul>
       </div>
       <div>

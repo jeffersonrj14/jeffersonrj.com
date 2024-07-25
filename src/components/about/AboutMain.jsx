@@ -33,16 +33,16 @@ function AboutMain() {
       <AboutMe />
       <AboutBackground />
 
-      <section className='mt-10 sm:mt-20 '>
+      <section>
         <AboutEducation />
       </section>
 
-      <hr className='border-primary-light rounded-2xl mx-44' />
+      <hr className='dark:border-primary-light border-primary-dark rounded-2xl mx-20' />
       <section className=' pt-10'>
         <CourseWork />
       </section>
 
-      <section className=' pt-10'>
+      <section>
         <AboutContact />
       </section>
     </div>

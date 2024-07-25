@@ -14,9 +14,7 @@ const MyLinks = ({ href, text, rel }) => {
 function AboutEducation() {
   return (
     <div>
-      <h1 className='font-header text-5xl font-bold tracking-tight text-center md:text-left'>
-        Education
-      </h1>
+      <h1 className='font-header text-4xl font-bold tracking-tight text-left'>Education</h1>
       {/*  */}
       <div className='grid grid-cols-1 md:grid-cols-6 my-10'>
         <div className='flex flex-col col-span-2 mb-4 md:mb-0'>
