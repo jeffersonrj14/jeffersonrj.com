@@ -150,7 +150,6 @@ function AppHeader() {
               FAQ
             </Link>
           </div>
-
           <div className='border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-secondary-dark'>
             <Link href='mailto:jefferson@jeffersonrj.com' aria-label='Send me an email' passHref>
               <div className='mb-3 text-md font-general-medium bg-jefferson-light  hover:bg-jefferson-maindark hover:dark:bg-jefferson-main hover:text-jefferson-light  text-jefferson-dark shadow-lg rounded-md px-5 py-2.5 duration-300'>

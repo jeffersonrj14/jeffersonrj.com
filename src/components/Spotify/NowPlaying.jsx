@@ -67,7 +67,9 @@ export default function NowPlaying() {
         ) : (
           <p className='font-medium'>Not Playing</p>
         )}
-        <p className='whitespace-nowrap max-w-max font-medium lg:w-full w-6'>{data?.artist}</p>
+        <p className='whitespace-nowrap max-w-xs sm:max-w-full truncate font-medium w-48'>
+          {data?.artist}
+        </p>
       </div>
     </div>
   )
